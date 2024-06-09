@@ -46,8 +46,8 @@ www.codigocertocoders.com.br
 
 <h2>📮 Colaboradores </h2>
 
+[<img src="https://github.com/codigocerto/equipe06/assets/106245486/eb7c3013-bab8-4155-95c0-3c276dfc6a37" width=19% />](https://www.linkedin.com/in/robsonamendonca)
 [<img src="https://github.com/Fabiorocharb/equipe06/assets/106245486/0320248c-baec-4ba9-b9cf-7dcf81d3c18b" width=19% />](https://www.linkedin.com/in/fabiorocharb)
+[<img src="https://github.com/codigocerto/equipe06/assets/106245486/8f651e1a-4f22-4d71-99c7-bad645ba966d" width=19% />](https://www.linkedin.com/in/raphael-mazzieri)
 [<img src="https://github.com/Fabiorocharb/equipe06/assets/106245486/5ec883a5-b314-4704-9b1f-15ee9e9bccfe" width=19%/>](https://www.linkedin.com/in/paposseco)
-
-
-
+[<img src="https://github.com/codigocerto/equipe06/assets/106245486/a371eff3-fce8-4772-9906-2ade45ca7af8" width=19%/>](https://www.linkedin.com/in/dicksonfreitas)
