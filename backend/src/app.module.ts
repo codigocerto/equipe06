@@ -15,18 +15,21 @@ import { EtapaService } from './etapa/etapa.service';
 import { EtapaController } from './etapa/etapa.controller';
 import { SacService } from './sac/sac.service';
 import { SacEntity } from './sac/entities/SacEntity';
+import * as dotenv from 'dotenv';
+
+dotenv.config()
 
 @Module({
     
   imports: [
     SacModule, VoluntarioModule, RoadmapModule,EtapaModule,SacModule,
     TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: 'localhost',
+      type: "mysql",
+      host:process.env.DB_HOST ,
       port: 3306,
-      username: 'root',
-      password: 'Neto110299@',
-      database: 'codigocerto',
+      username: process.env.DB_USERNAME,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_DATABASE,
       entities: [RoadmapEntity, EtapaEntity, SacEntity],
       migrations:[`${__dirname}/migration/{.ts,*.js}`],
       migrationsRun:true,
