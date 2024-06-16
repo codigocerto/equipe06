@@ -34,6 +34,7 @@ dotenv.config()
       migrations:[`${__dirname}/migration/{.ts,*.js}`],
       migrationsRun:true,
       synchronize: true
+      
     }),
     TypeOrmModule.forFeature([RoadmapEntity,EtapaEntity , SacEntity]),
     EtapaModule,
