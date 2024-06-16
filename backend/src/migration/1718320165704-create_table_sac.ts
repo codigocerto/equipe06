@@ -16,7 +16,7 @@ export class CreateTableSac1718320165704 implements MigrationInterface {
 
     public async down(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.query(`
-            DROP TABLE sac
+            DROP TABLE IF EXISTS sac
         `);
     }
 

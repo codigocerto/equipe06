@@ -7,10 +7,10 @@ export class CreateTableEtapa1718314170085 implements MigrationInterface {
             CREATE TABLE etapa (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 title VARCHAR(255) NOT NULL,
-                type ENUM(ARTIGO, SITE, VIDEO),
+                type ENUM('ARTIGO' , 'SITE' , 'VIDEO') NOT NULL,
                 link VARCHAR(255) NOT NULL,
                 roadmap_id INT NOT NULL,
-                ordem INT NOT NULL
+                ordem INT NOT NULL,
                 FOREIGN KEY (roadmap_id) REFERENCES roadmap(id)
             )
         `);
@@ -18,7 +18,7 @@ export class CreateTableEtapa1718314170085 implements MigrationInterface {
 
     public async down(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.query(`
-            DROP TABLE etapa
+            DROP TABLE IF EXISTS etapa
         `);
     }
 

@@ -8,7 +8,7 @@ export class EtapaEntity{
     id: number
     @Column({name : "title" , nullable : false} )
     title : string
-    @Column({name : "type" , nullable : false} )
+    @Column({name : "type" , nullable : false , default: Type.ARTIGO } )
     type : Type
     @Column({name : "ordem" , nullable : false} )
     ordem : number

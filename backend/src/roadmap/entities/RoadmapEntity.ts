@@ -10,8 +10,8 @@ export class RoadmapEntity{
     name : string
     @Column({name : "description" , nullable : false} )
     description : string
-    @Column({name : "stack" , nullable : false , enum: StackEnum} )
-    stack : StackEnum
+    @Column({ type: 'enum', enum: StackEnum, default: StackEnum.FRONTEND })
+    stack: StackEnum;
 
     @OneToMany(() => EtapaEntity, (etapa) => etapa.roadmap)
     etapas? : EtapaEntity[]
