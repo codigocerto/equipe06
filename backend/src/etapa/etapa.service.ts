@@ -22,12 +22,11 @@ export class EtapaService {
         if(!findRoadmap ){
             throw new Error("Roadmap não encontrado")
         }
-        dto.roadmap_id = id
 
         if(!dto.id){
             dto.id = uuidv4()
         }
-        
+        dto.roadmap_id = id
         return this.etapaRepository.save(dto)
     }
 }

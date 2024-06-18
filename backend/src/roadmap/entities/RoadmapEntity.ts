@@ -5,7 +5,7 @@ import {v4 as uuidv4} from 'uuid'
 
 @Entity({name: 'roadmap'})
 export class RoadmapEntity{
-    @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn()
     id: string
     @Column({name : "name" , nullable : false} )
     name : string
@@ -16,4 +16,11 @@ export class RoadmapEntity{
 
     @OneToMany(() => EtapaEntity, (etapa) => etapa.roadmap)
     etapas? : EtapaEntity[]
+
+    // @BeforeInsert()
+    // generateId() {
+    //     if (!this.id) {
+    //         this.id = uuidv4();
+    //     }
+    // }
 }

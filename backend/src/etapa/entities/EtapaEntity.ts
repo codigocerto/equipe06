@@ -1,11 +1,11 @@
 import { RoadmapEntity } from "src/roadmap/entities/RoadmapEntity";
 import { BeforeInsert, Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
-import { Type } from "../dto/TypeEnum";
-import { v4 as uuidv4 } from 'uuid';
+import { Type } from "../dto/TypeEnum"
+import {v4 as uuidv4} from 'uuid'
 
 @Entity({ name: 'etapa' })
 export class EtapaEntity {
-    @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn()
     id: string;
 
     @Column({ name: "title", nullable: false })
@@ -26,4 +26,11 @@ export class EtapaEntity {
     @ManyToOne(() => RoadmapEntity, (roadmap) => roadmap.etapas)
     @JoinColumn({ name: 'roadmap_id', referencedColumnName: 'id' })
     roadmap?: RoadmapEntity;
+
+    @BeforeInsert()
+    generateId() {
+        if (!this.id) {
+            this.id = uuidv4();
+        }
+    }
 }
