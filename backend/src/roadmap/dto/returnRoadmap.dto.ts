@@ -4,11 +4,10 @@ import { ReturnEtapaDTO } from "src/etapa/dto/returnEtapa.dto";
 import { StackEnum } from "./StackEnum";
 
 export class ReturnRoadmapDTO {
-    id:number
+    id:string
     name: string;
     description: string;
     stack: StackEnum;
-    
     etapas?: ReturnEtapaDTO[];
   
     constructor(roadmapEntity: RoadmapEntity) {
@@ -16,7 +15,6 @@ export class ReturnRoadmapDTO {
       this.name = roadmapEntity.name;
       this.description = roadmapEntity.description;
       this.stack = roadmapEntity.stack;
-  
       this.etapas = roadmapEntity.etapas
       ? roadmapEntity.etapas.map((etapa) => new ReturnEtapaDTO(etapa))
       : undefined
