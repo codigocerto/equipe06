@@ -1,7 +1,7 @@
 import { StackEnum } from "./StackEnum";
 
 export class ReturnRoadmapDTO {
-    id:number
+    id:string
     name: string;
     description: string;
     stack: StackEnum;

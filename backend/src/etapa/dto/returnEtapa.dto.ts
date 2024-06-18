@@ -7,9 +7,8 @@ export class ReturnEtapaDTO{
     type : Type
     ordem : number
     link : string
-    
+
     constructor(etapa: EtapaEntity){
-       
         this.title = etapa.title
         this.type = etapa.type
         this.ordem = etapa.ordem
