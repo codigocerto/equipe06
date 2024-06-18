@@ -15,9 +15,7 @@ export class RoadmapService {
       ) {}
 
     async addRoadmap(dto : RoadmapEntity){
-        if(!dto.id){
-            dto.id = uuidv4()
-        }
+        dto.id = uuidv4()
         console.log(dto)
         return this.roadmapRepository.save(dto)
     }
