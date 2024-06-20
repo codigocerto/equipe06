@@ -5,7 +5,7 @@ export class CreateTableSac1718320165704 implements MigrationInterface {
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.query(`
             CREATE TABLE sac (
-                id INT AUTO_INCREMENT PRIMARY KEY,
+                id VARCHAR(100) PRIMARY KEY,
                 name VARCHAR(255) NOT NULL,
                 email VARCHAR(50) NOT NULL,
                 content VARCHAR(255) NOT NULL,

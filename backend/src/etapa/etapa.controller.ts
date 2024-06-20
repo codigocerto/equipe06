@@ -1,9 +1,9 @@
 import { Body, Controller, Param, Post } from '@nestjs/common';
 import { EtapaService } from './etapa.service';
 import { EtapaEntity } from './entities/EtapaEntity';
-import { retry } from 'rxjs';
+
 import { ReturnEtapaDTO } from './dto/returnEtapa.dto';
-import { ReturnRoadmapDTO } from 'src/roadmap/dto/returnRoadmap.dto';
+import { ApiOperation, ApiTags } from '@nestjs/swagger';
 
 @Controller('etapa')
 export class EtapaController {

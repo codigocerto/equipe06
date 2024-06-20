@@ -1,8 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { RoadmapEntity } from './entities/RoadmapEntity';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Like, Raw, Repository } from 'typeorm';
-import { realpath } from 'fs';
+import {  Raw, Repository } from 'typeorm';
 import { ReturnRoadmapDTO } from './dto/returnRoadmap.dto';
 import {v4 as uuidv4} from "uuid"
 
@@ -15,7 +14,9 @@ export class RoadmapService {
       ) {}
 
     async addRoadmap(dto : RoadmapEntity){
-        dto.id = uuidv4()
+        if(!dto.id){
+            dto.id = uuidv4()
+        }
         console.log(dto)
         return this.roadmapRepository.save(dto)
     }
