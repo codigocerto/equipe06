@@ -1,7 +1,16 @@
 
+<<<<<<< HEAD
 ![Equipe de desenvolvimento](https://github.com/codigocerto/equipe06/assets/106245486/352e52f3-d973-4204-baea-384807dda5e4)
 
 > ****Status do projeto****: ***Em construção 🚧*** 
+=======
+<h2> 🚀 Equipe de Desenvolvimento | Codigo Certo Coders [06]</h2> 
+
+![b0v93](https://github.com/codigocerto/equipe06/assets/106245486/302a4c81-1343-47e4-8ddf-b11c502f51ba)
+
+
+> ****Status do projeto****: **Em construção 🚧** 
+>>>>>>> 8ab7007ce5247d8cff3f063e7c845d8f23158b86
 <h2> 🎯 Objetivo do projeto:</h2>
 
 **A landing page da Código Certo Coders terá como propósito principal apresentar de forma
@@ -43,6 +52,7 @@ www.codigocertocoders.com.br
 
 <h2>📮 Colaboradores </h2>
 
+<<<<<<< HEAD
 [<img src="https://github.com/codigocerto/equipe06/assets/106245486/e22b1c15-b795-4e0e-ab10-ae97c50c2880" width=15% />](https://www.linkedin.com/in/robsonamendonca)
 
 [<img src="https://github.com/Fabiorocharb/equipe06/assets/106245486/0320248c-baec-4ba9-b9cf-7dcf81d3c18b" width=15% />](https://www.linkedin.com/in/fabiorocharb)
@@ -58,6 +68,10 @@ www.codigocertocoders.com.br
 [<img src="https://github.com/codigocerto/equipe06/assets/106245486/e92bb026-620c-4ca5-badd-43076155bcb8" width=15%/>](https://br.linkedin.com/in/pedrohaugusto)
 
 
+=======
+[<img src="https://github.com/Fabiorocharb/equipe06/assets/106245486/0320248c-baec-4ba9-b9cf-7dcf81d3c18b" width=19% />](https://www.linkedin.com/in/fabiorocharb)
+[<img src="https://github.com/Fabiorocharb/equipe06/assets/106245486/5ec883a5-b314-4704-9b1f-15ee9e9bccfe" width=19%/>](https://www.linkedin.com/in/paposseco)
+>>>>>>> 8ab7007ce5247d8cff3f063e7c845d8f23158b86
 
 
 
