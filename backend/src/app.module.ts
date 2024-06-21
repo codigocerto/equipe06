@@ -5,6 +5,13 @@ import { SacController } from './sac/sac.controller';
 import { SacModule } from './sac/sac.module';
 import { VoluntarioModule } from './voluntario/voluntario.module';
 import { RoadmapModule } from './roadmap/roadmap.module';
+<<<<<<< HEAD
+
+@Module({
+  imports: [SacModule, VoluntarioModule, RoadmapModule],
+  controllers: [AppController, SacController],
+  providers: [AppService],
+=======
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { RoadmapController } from './roadmap/roadmap.controller';
 import { RoadmapEntity } from './roadmap/entities/RoadmapEntity';
@@ -46,5 +53,6 @@ dotenv.config()
   ],
   controllers: [AppController, SacController , RoadmapController, EtapaController , SacController],
   providers: [AppService , RoadmapService , EtapaService , SacService, SendEmailService],
+>>>>>>> upstream/develop
 })
 export class AppModule {}

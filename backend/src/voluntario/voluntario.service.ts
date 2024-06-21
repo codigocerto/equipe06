@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+import { Injectable } from '@nestjs/common';
+
+@Injectable()
+export class VoluntarioService {}
+=======
 import { Get, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { privateDecrypt } from 'crypto';
@@ -77,3 +83,4 @@ export class VoluntarioService {
 
    
 }
+>>>>>>> upstream/develop

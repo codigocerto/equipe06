@@ -5,6 +5,7 @@
 	z-index: 2;
     overflow: visible;
 	
+	
 	span,
 	span:before,
 	span:after {
@@ -26,7 +27,7 @@
 		left: 0px;
 		top: -10px;
 		width: 33px;
-        cursor: pointer;
+        
 	}
 
 	
@@ -34,7 +35,7 @@
 		right: 20px;
 		top: -35px;
 		width: 33px;
-        cursor: pointer;
+        
 	}
 
 	
@@ -42,7 +43,7 @@
 		left: 0px;
 		top: 10px;
 		width: 33px;
-        cursor: pointer;
+        
 	}
 
 	

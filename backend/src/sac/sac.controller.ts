@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+import { Controller } from '@nestjs/common';
+
+@Controller('sac')
+export class SacController {}
+=======
 import { Body, Controller, Post } from '@nestjs/common';
 import { SacEntity } from './entities/SacEntity';
 import { SacService } from './sac.service';
@@ -12,3 +18,4 @@ export class SacController {
         return await this.sacService.insertSac(dto)
     }
 }
+>>>>>>> upstream/develop

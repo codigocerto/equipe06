@@ -1,0 +1,138 @@
+@media (max-width: 430px) {
+  .menu-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #burger-menu > span {
+    display: none;
+  }
+
+  .menu-container .logo-menu {
+    padding: 5px 0 0 10px;
+  }
+
+  .menu-desktop {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .menu-desktop > ul {
+    display: flex;
+  }
+
+  .menu-desktop > ul > li {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 27px;
+  }
+
+  .menu-desktop > ul > li:last-child {
+    margin-right: 90px;
+  }
+
+  a {
+    font-size: 17.5px;
+    font-weight: 400;
+    color: black;
+    transition: 0.6s ease-in-out;
+  }
+
+  a:hover {
+    padding: 5px 10px;
+    background-color: #eb5757;
+    border-radius: 50px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .hero {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero .imagem-hero {
+    max-width: 600px;
+    padding: 10px 20px;
+  }
+
+  .hero .imagem-hero > img {
+    width: 100%;
+  }
+
+  .hero .informacoes {
+    max-width: 100%;
+  }
+
+  .informacoes .titulo-principal {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .informacoes .descricao {
+   width: 100%;
+   font-size: 21px;
+ }
+
+ .informacoes .setas {
+   right: 50px;
+   bottom: 0px;
+ }
+}
+
+@media (min-width: 800px) {
+   .hero {
+      padding-top: 100px;
+      
+    }
+
+    .informacoes .botao-cadastrar {
+      margin-top: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .hero .informacoes {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .informacoes .titulo-principal {
+    text-align: start;
+    font-size: 45px;
+  }
+
+  .informacoes .descricao {
+    width: 100%;
+    text-align: start;
+  }
+
+  .informacoes .botao-cadastrar {
+    display: inline;
+  }
+
+  .botao-cadastrar button:hover {
+    background-color: #eb5757;
+  }
+
+  .informacoes .setas {
+   bottom: 0px;
+ }
+
+  
+}

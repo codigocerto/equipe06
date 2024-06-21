@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+import { Controller } from '@nestjs/common';
+
+@Controller('voluntario')
+export class VoluntarioController {}
+=======
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { VoluntarioService } from './voluntario.service';
 import { VoluntarioEntity } from './entities/VoluntarioEntities';
@@ -30,3 +36,4 @@ export class VoluntarioController {
     }
 
 }
+>>>>>>> upstream/develop
