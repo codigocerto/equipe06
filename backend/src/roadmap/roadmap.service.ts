@@ -1,9 +1,14 @@
 import { Injectable } from '@nestjs/common';
+<<<<<<< HEAD
+
+@Injectable()
+export class RoadmapService {}
+=======
 import { RoadmapEntity } from './entities/RoadmapEntity';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Like, Raw, Repository } from 'typeorm';
-import { realpath } from 'fs';
+import {  Raw, Repository } from 'typeorm';
 import { ReturnRoadmapDTO } from './dto/returnRoadmap.dto';
+import {v4 as uuidv4} from "uuid"
 
 @Injectable()
 export class RoadmapService {
@@ -14,10 +19,14 @@ export class RoadmapService {
       ) {}
 
     async addRoadmap(dto : RoadmapEntity){
+        if(!dto.id){
+            dto.id = uuidv4()
+        }
+        console.log(dto)
         return this.roadmapRepository.save(dto)
     }
 
-    async getRoadmapRelations(id : number){
+    async getRoadmapRelations(id : string){
         const relation = await this.roadmapRepository.findOne({
             where : {
                 id: id
@@ -27,12 +36,14 @@ export class RoadmapService {
         return relation
     }
 
-    async findRoadmapById(id : number){
+    async findRoadmapById(id : string) {
         const find = await this.roadmapRepository.findOne({
             where : {
                 id : id
             }
         })
+
+        return find
     }
 
     async getByQuery(query: string): Promise<ReturnRoadmapDTO[]> {
@@ -43,5 +54,29 @@ export class RoadmapService {
         });
     }
 
+    async delete(id: string) {
+        // Verificar se o item existe
+        const item = await this.roadmapRepository.findOne({
+            where : {
+                id : id
+            }
+        })
+        
+        if (!item) {
+            throw new Error(`Item with id ${id} not found`);
+        }
+        
+        // Tentar deletar o item
+        try {
+            await this.roadmapRepository.delete(id);
+            return { message: 'Item successfully deleted' };
+        } catch (error) {
+            console.error(`Error deleting item with id ${id}:`, error);
+            throw new Error(`Failed to delete item with id ${id}`);
+        }
+    }
+    
+
     
 }
+>>>>>>> upstream/develop

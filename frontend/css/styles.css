@@ -1,6 +1,11 @@
 body{
     min-height: 100vh;
-    /* overflow-x: hidden; */
+}
+
+.menu-container #divisoria{
+    width: 100vw;
+    height: 1px;
+    color: #0000002b;
 }
 
 .hero .imagem-hero{
@@ -40,6 +45,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .botao-cadastrar > button {
     padding: 15px 32px;
     margin: 4px 2px;
@@ -54,10 +60,6 @@ body{
     color: white;
     cursor: pointer;
     transition: 0.5s ease-in-out;
-}
-
-.botao-cadastrar button:hover{
-    background-color: #EB5757;
 }
 
 .setas{

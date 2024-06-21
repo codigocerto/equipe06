@@ -5,6 +5,13 @@ import { SacController } from './sac/sac.controller';
 import { SacModule } from './sac/sac.module';
 import { VoluntarioModule } from './voluntario/voluntario.module';
 import { RoadmapModule } from './roadmap/roadmap.module';
+<<<<<<< HEAD
+
+@Module({
+  imports: [SacModule, VoluntarioModule, RoadmapModule],
+  controllers: [AppController, SacController],
+  providers: [AppService],
+=======
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { RoadmapController } from './roadmap/roadmap.controller';
 import { RoadmapEntity } from './roadmap/entities/RoadmapEntity';
@@ -15,7 +22,11 @@ import { EtapaService } from './etapa/etapa.service';
 import { EtapaController } from './etapa/etapa.controller';
 import { SacService } from './sac/sac.service';
 import { SacEntity } from './sac/entities/SacEntity';
+import { SendEmailService } from './send-email/send-email.service';
+import { SendEmailModule } from './send-email/send-email.module';
 import * as dotenv from 'dotenv';
+import { VoluntariadoEntity } from './voluntario/entities/VoluntariadoEntities';
+import { VoluntarioEntity } from './voluntario/entities/VoluntarioEntities';
 
 dotenv.config()
 
@@ -30,16 +41,18 @@ dotenv.config()
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_DATABASE,
-      entities: [RoadmapEntity, EtapaEntity, SacEntity],
+      entities: [RoadmapEntity, EtapaEntity, SacEntity , VoluntariadoEntity , VoluntarioEntity],
       migrations:[`${__dirname}/migration/{.ts,*.js}`],
       migrationsRun:true,
       synchronize: true
       
     }),
-    TypeOrmModule.forFeature([RoadmapEntity,EtapaEntity , SacEntity]),
+    TypeOrmModule.forFeature([RoadmapEntity,EtapaEntity , SacEntity , VoluntarioEntity , VoluntariadoEntity]),
     EtapaModule,
+    SendEmailModule,
   ],
   controllers: [AppController, SacController , RoadmapController, EtapaController , SacController],
-  providers: [AppService , RoadmapService , EtapaService , SacService],
+  providers: [AppService , RoadmapService , EtapaService , SacService, SendEmailService],
+>>>>>>> upstream/develop
 })
 export class AppModule {}
