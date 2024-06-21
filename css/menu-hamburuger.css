@@ -1,0 +1,113 @@
+#burger-menu {
+	max-height: 100px;
+	margin-bottom: 50px;
+	position: relative;
+	z-index: 2;
+    overflow: visible;
+	
+	span,
+	span:before,
+	span:after {
+		background-color: black;
+		display: block;
+		height: 2px;
+		opacity: 1;
+		position: absolute;
+		transition: 0.3s ease-in-out;
+	}
+
+	span:before,
+	span:after {
+		content: '';
+	}
+
+	
+	span:before {
+		left: 0px;
+		top: -10px;
+		width: 33px;
+        cursor: pointer;
+	}
+
+	
+	span {
+		right: 20px;
+		top: -35px;
+		width: 33px;
+        cursor: pointer;
+	}
+
+	
+	span:after {
+		left: 0px;
+		top: 10px;
+		width: 33px;
+        cursor: pointer;
+	}
+
+	
+	&.close {
+	
+		span:before {
+			top: 0px;
+			transform: rotate(90deg);
+			width: 27px;
+		}
+
+		
+		span {
+			transform: rotate(-45deg);
+			top: -35px;
+			width: 27px;
+		}
+
+		
+		span:after {
+			top: 0px;
+			left: 0px;
+			transform: rotate(90deg);
+			opacity: 0;
+			width: 0;
+		}
+	}
+}
+
+#menu {
+	z-index: 1;
+	min-width: 100%;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	height: 0;
+	visibility: hidden;
+	opacity: 0;
+	text-align: center;
+	padding-top: 20px;
+	transition: all 0.5s ease-in-out;
+
+	&.overlay {
+		visibility: visible;
+		opacity: 1;
+		padding-top: 100px;
+		background: rgba(0, 0, 0, 0.5);
+        
+	}
+
+	ul {
+        width: 100%;
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+        margin-bottom: 40px;
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+		text-decoration: none;
+        color: white;
+	}
+}

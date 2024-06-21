@@ -1,0 +1,204 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --font-size-base: 16px;
+    --font-size-lg: 2.5em;
+    --font-size-md: 1.5em;
+    --font-size-sm: 1em;
+    --font-weight-regular: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
+    --color-black: #000;
+    --color-red: #eb5757;
+    --color-white: #fff;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --btn-width: 100px;
+    --height: 100vh;
+    --width: 100%;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+body,
+section {
+    width: var(--width);
+    height: var(--height);
+    font-size: var(--font-size-base);
+    background-color: var(--color-white);
+}
+
+.title__content {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.content {
+    margin: var(--spacing-md) 0;
+}
+
+.title__content h2 {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+    font-size: var(--font-size-lg);
+}
+
+.text__red {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-red);
+    text-shadow: 1px 1px 0 var(--color-black), -1px -1px 0 var(--color-black),
+        1px -1px 0 var(--color-black), -1px 1px 0 var(--color-black),
+        1px 0 0 var(--color-black), -1px 0 0 var(--color-black),
+        0 1px 0 var(--color-black), 0 -1px 0 var(--color-black);
+}
+
+.content__subtitle {
+    margin: var(--spacing-md);
+}
+
+.sub__title {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-sm);
+}
+
+.main__title {
+    margin-bottom: var(--spacing-md);
+}
+
+.container__img {
+    display: flex;
+    width: var(--width);
+    max-width: var(--width);
+    object-fit: cover;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid var(--color-black);
+    max-width: 350px;
+    margin: var(--spacing-md) auto;
+}
+
+/* responsive */
+@media screen and (min-width: 1024px) {
+    .card__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: var(--width);
+        max-width: 90%;
+        margin: 0 auto;
+        gap: 2em;
+    }
+}
+
+.container__btn {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    width: var(--width);
+    margin: var(--spacing-sm) auto;
+}
+
+.btn,
+.btn__outline {
+    font-weight: var(--font-weight-medium);
+    height: var(--spacing-md);
+    color: var(--color-black);
+    border: none;
+    cursor: pointer;
+}
+
+.btn__arrow {
+    font-weight: var(--font-weight-regular);
+    width: var(--btn-width);
+    height: var(--spacing-md);
+    color: var(--color-black);
+    border: none;
+    cursor: pointer;
+}
+
+.btn__outline,
+.btn__arrow {
+    background-color: transparent;
+}
+
+.btn__register {
+    background-color: var(--color-black);
+    border: none;
+    color: var(--color-white);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-sm);
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn__register:hover {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    transform: scale(1);
+}
+
+.btn__arrow i {
+    font-size: var(--font-size-sm);
+    margin-left: 5px;
+    animation: moveArrow 1s infinite alternate;
+}
+
+@keyframes moveArrow {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.content__btn {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.container__btn h5 {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.container__btn p {
+    font-weight: var(--font-weight-regular);
+    color: var(--color-black);
+    margin-bottom: var(--spacing-md);
+}
+
+.text__danger {
+    color: var(--color-red);
+}
+
+.content__text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.container__btn-register {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--spacing-md);
+}
