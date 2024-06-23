@@ -8,17 +8,19 @@ import * as nodemailer from 'nodemailer';
 export class SendEmailService {
   private transporter;
   constructor(){
-      this.transporter = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
-        port: 587,
-        auth: {
-            user: 'adah.robel@ethereal.email',
-            pass: 'PyQg3RAFuZ5AyCpKZX'
-        }
-      })
-    
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   }
 
+   async sendEmail(emailDto : SendEmailDTO , vaga? : string) {
+      const msg = {
+        to: emailDto.email,
+        from: process.env.EMAIL_USER,
+        subject: 'Formulário Recebido',
+        text: `Olá ${emailDto.name},Recebemos o seu formulário: ${emailDto.content || vaga}Obrigado!`,
+      };
+
+    sgMail.send(msg)
+  }
   
 
   // async sendEmail(emailDto : SendEmailDTO , vaga? : string) {
@@ -37,14 +39,4 @@ export class SendEmailService {
   //       }
   //   }
 
-  async sendEmail(to: string, subject: string, text: string, html?: string){
-    const mailOptions = {
-      from: '',
-      to : '',
-      subject: '',
-      text: '',
-      html: '',
-    };
-    return this.transporter.sendEmail(mailOptions)
-  }
 }
