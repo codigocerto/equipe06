@@ -1,9 +1,4 @@
 import { Injectable } from '@nestjs/common';
-<<<<<<< HEAD
-
-@Injectable()
-export class SacService {}
-=======
 import { InjectRepository } from '@nestjs/typeorm';
 import { SacEntity } from './entities/SacEntity';
 import { Repository } from 'typeorm';
@@ -26,8 +21,8 @@ export class SacService {
         }
         const addSac = await this.sacRepository.save(dto)
         
-        // this.sendEmailService.sendEmail(addSac)
-        // console.log( this.sendEmailService.sendEmail(addSac))
+        this.sendEmailService.sendEmail(addSac)
+        console.log( this.sendEmailService.sendEmail(addSac))
 
         return("Formulario enviado com sucesso")
         
@@ -35,4 +30,3 @@ export class SacService {
 
 
 }
->>>>>>> upstream/develop
