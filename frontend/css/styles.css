@@ -1,5 +1,5 @@
 body{
-    min-height: 100vh;
+    min-width: 100%;
 }
 
 .menu-container #divisoria{
@@ -7,6 +7,7 @@ body{
     height: 1px;
     color: #0000002b;
 }
+
 
 .hero .imagem-hero{
     max-width: 100%;
@@ -82,12 +83,12 @@ body{
 
 .icones {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction:row;
     text-align: center;
-    margin-left: 90px;
-    justify-content: space-between;
-    
+    justify-content: center;
+    height: auto;
+    gap: 20px;
 }
 .texto{
     display: flex;
@@ -95,16 +96,31 @@ body{
     flex-direction:row;
     justify-content: center;
     align-content: space-around;
+    gap: 5px;
 }
 .icones2{
     display: flex;
     justify-content:end;
-    margin-right: 90px;
 }
 
 #h6{
-    margin-left: 100px;
     text-align: center;
     display: flex;
     justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .icones {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 90px;
+    }
+
+    .icones2 {
+        margin-right: 90px;
+    }
+    
+    #h6 {
+        margin-left: 80px;
+    }
 }

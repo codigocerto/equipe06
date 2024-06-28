@@ -1,0 +1,193 @@
+.trilhas-content {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+}
+
+.trilhas-titulo-container {
+    text-align: center;
+}
+
+.titulo {
+    margin: 0;
+    padding: 40px 10px 20px 10px;
+    font-size: 48px;
+    word-wrap: break-word;
+}
+
+.span-titulo {
+    color: #EB5757;
+}
+
+.botao-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.botao-stack {
+    font-size: 16px;
+    background-color: #FFFFFF;
+    border: solid 0.3px #000000;
+    padding: 12px;
+}
+
+.botao-stack:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.botao-stack:hover~.icone-Botao {
+    transform: rotate(360deg);
+    animation: rotate 1s linear infinite;
+}
+
+.icone-Botao {
+    width: 90px;
+    height: 90px;
+    margin-top: -15px;
+    margin-bottom: -40px;
+    display: inline-block;
+}
+
+.timeline-roadmap {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.timeline-item {
+    display: flex;
+}
+
+.item-img {
+    width: 48px;
+    height: 164px;
+    margin-right: 15px;
+}
+
+.ultimo-item-img {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+}
+
+.item-content {
+    text-align: start;
+}
+
+.item-titulo {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.item-descricao {
+    font-size: 16px;
+}
+
+.img-itemContainer {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.img-SetaPBaixo {
+    width: 100px;
+    height: 100px;
+    margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -50px;
+}
+
+@keyframes move-line {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-150%);
+    }
+}
+
+.Linha-separadora {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    overflow: hidden;
+    height: auto;
+    padding: 10px;
+}
+
+.img-linha {
+    animation: move-line 5s linear infinite;
+}
+
+
+@media (min-width: 1440px) {
+    .trilhas-content {
+        flex-direction: row;
+        padding: 50px 20px;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    .trilhas-titulo-container {
+        width: 616px;
+        height: 310px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 30px;
+        align-items: baseline;
+    }
+
+    .titulo {
+        padding: 30px 10px 20px 10px;
+    }
+
+    .botao-container {
+        flex-direction: row;
+        align-items: end;
+    }
+
+    .botao-stack {
+        border: solid 1.5px #000000;
+        padding: 14px;
+    }
+
+    .icone-Botao {
+        margin-top: 0;
+        margin-bottom: -25px;
+    }
+
+
+    .timeline-roadmap {
+        width: 616px;
+        height: auto;
+    }
+
+    .img-SetaPBaixo {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+}
