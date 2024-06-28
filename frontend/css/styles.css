@@ -1,0 +1,126 @@
+body{
+    min-width: 100%;
+}
+
+.menu-container #divisoria{
+    width: 100vw;
+    height: 1px;
+    color: #0000002b;
+}
+
+
+.hero .imagem-hero{
+    max-width: 100%;
+}
+
+.imagem-hero img{
+    width: 100%;
+}
+
+.informacoes {
+    width: 100%;
+}
+
+.informacoes .titulo-principal{
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.titulo-principal span{
+    color: #EB5757;
+}
+
+.informacoes .descricao{
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16.5px;
+    text-align: center;
+}
+
+.descricao span{
+    color: #EB5757;
+}
+
+.botao-cadastrar{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-cadastrar > button {
+    padding: 15px 32px;
+    margin: 4px 2px;
+    background-color: #000000;
+    border: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.setas{
+    position: absolute;
+    right: 0;
+}
+
+.setas img{
+    max-width: 50px;
+    
+}
+
+#h5 { 
+    text-align: center;
+    
+}
+#logo{
+
+}
+
+.icones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+}
+.texto{
+    display: flex;
+    align-items:center;
+    flex-direction:row;
+    justify-content: center;
+    align-content: space-around;
+    gap: 5px;
+}
+.icones2{
+    display: flex;
+    justify-content:end;
+}
+
+#h6{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .icones {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 90px;
+    }
+
+    .icones2 {
+        margin-right: 90px;
+    }
+    
+    #h6 {
+        margin-left: 80px;
+    }
+}
