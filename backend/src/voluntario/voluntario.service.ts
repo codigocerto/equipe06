@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import { Injectable } from '@nestjs/common';
-
-@Injectable()
-export class VoluntarioService {}
-=======
 import { Get, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { privateDecrypt } from 'crypto';
@@ -65,7 +59,7 @@ export class VoluntarioService {
         obj.vaga_id = id
         const add = await this.voluntariadoRepository.save(obj)
 
-        // this.sendEmail.sendEmail(obj , checkVga.title)
+        this.sendEmail.sendEmail(obj , checkVga.title)
 
         return add
 
@@ -83,4 +77,3 @@ export class VoluntarioService {
 
    
 }
->>>>>>> upstream/develop
