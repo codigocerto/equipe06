@@ -1,6 +1,5 @@
 #burger-menu {
-	max-height: 100px;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 	position: relative;
 	z-index: 2;
     overflow: visible;
@@ -20,6 +19,7 @@
 	span:before,
 	span:after {
 		content: '';
+		
 	}
 
 	
@@ -35,7 +35,6 @@
 		right: 20px;
 		top: -35px;
 		width: 33px;
-        
 	}
 
 	
