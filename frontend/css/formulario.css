@@ -1,0 +1,113 @@
+
+@media (min-width: 1024px){
+
+  .secao-form{
+    display: flex;
+    height: 100vh;
+  }
+  
+  .secao-form .container-imagem {
+    margin: auto;
+  }
+  
+  .container-imagem img{
+    width: 40vw;
+    height: 40vw;
+  }
+  
+  .container-formulario h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    width: 100%; 
+    padding-bottom: 24px;
+    text-align: left;  
+  }
+  
+  .titulo-h3 {
+    font-size: 0.90em;
+    font-weight: 400;
+    padding-bottom: 25px;
+    
+  }
+  
+  .titulo-h4 {
+    font-size: 0.90em;
+    padding-bottom: 12px; 
+  }
+  
+  .container-formulario h3, .container-formulario h4 {
+    text-align: left; 
+    width: 100%; 
+  }
+  
+  
+  .span-mensagem {
+    color: #eb5757;
+  }
+  
+  .formulario{
+    width: 100%;
+  }
+  
+  .container-formulario {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    gap: 6px;
+    padding-top: 10px;
+  }
+  
+  .form-label{
+    font-size: 1em;
+  }
+  
+  .container-formulario textarea {
+    width: 90%;
+    height: 120px;
+  }
+  
+  .container-formulario input {
+    width: 90%;
+    padding: 8px;
+  }
+  
+  .container-formulario input[type="checkbox"] {
+    width: auto;
+    transform: scale(1);
+  }
+  
+  .form-input {
+    margin: 10px 0 20px 0;
+  }
+  
+  .area-texto {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .condicoes {
+    font-size: 0.75em;
+    display: inline-flex;
+    margin: -10px 0;
+  }
+  
+  .botao {
+    padding: 15px 20px;
+    background-color: #000000;
+    color: #f4f4f4;
+    border: none;
+    cursor:pointer;
+    margin-bottom: 16px;
+    font-size: 1em;
+  }
+  
+  .botao:hover {
+    background-color: #eb5757;
+  }
+  
+}
+
+
