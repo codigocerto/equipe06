@@ -1,0 +1,284 @@
+@media (max-width: 320px) {
+
+  .container-imagem {
+    margin: 10px;
+  }
+
+  .container-imagem img {
+    width: 100%;
+   
+  }
+
+  .container-formulario h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 24px;
+  }
+
+  .titulo-h3 {
+    font-size: 0.9em;
+    font-weight: 400;
+    padding-bottom: 25px;
+  }
+
+  .titulo-h4 {
+    font-size: 0.8em;
+    padding-bottom: 5px;
+  }
+  .span-mensagem {
+    color: #eb5757;
+  }
+
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+  }
+
+  .formulario{
+    width: 91%;
+  }
+
+  .container-formulario .form-input {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .container-formulario .form-input[type="checkbox"] {
+    width: auto;
+    margin-top: -20px;
+    margin-bottom: 0;
+  }
+
+  .form-input {
+    margin: 10px 0 20px 0;
+  }
+
+  .area-texto {
+    margin-top: 10px;
+    padding: 10px 0 0 5px;
+  }
+
+  .condicoes {
+    font-size: 14px;
+    display: inline-flex;
+    margin: -10px 0;
+  }
+
+  .botao {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+
+  .botao:hover {
+    background-color: #eb5757;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+
+  .container-imagem {
+    margin: 10px;
+  }
+
+  .container-imagem img {
+    width: 100%;
+  }
+
+  .container-formulario h2 {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 24px;
+  }
+
+  .titulo-h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-bottom: 25px;
+  }
+
+  .titulo-h4 {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+  }
+  .span-mensagem {
+    color: #eb5757;
+  }
+
+  .formulario{
+    width: 100%;
+  }
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    margin: auto;
+  }
+
+  .form-label{
+    font-size: 1.2em;
+  }
+
+  .area-texto{
+    width: 100%;
+  }
+
+  .container-formulario .form-input {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .container-formulario .form-input[type="checkbox"] {
+    width: auto;
+    transform: scale(1.5);
+    margin-top: -20px;
+  }
+
+  .form-input {
+    margin: 10px 0 20px 0;
+  }
+
+  .area-texto {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .condicoes {
+    font-size: 1.2em;
+    display: inline-flex;
+    margin: -10px 0;
+  }
+
+  .botao {
+    padding: 15px 25px;
+    background-color: #000000;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-size: 1.2em;
+  }
+
+  .botao:hover {
+    background-color: #eb5757;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  
+  .secao-form{
+    display: flex;
+    height: 100vh;
+  }
+
+  .container-imagem {
+    margin: auto;
+  }
+
+  .container-imagem img{
+    width: 45vw;
+    height: 55vw;
+  }
+
+  .container-formulario h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    width: 100%; 
+    padding-bottom: 24px;
+    text-align: left;  
+  }
+
+  .titulo-h3 {
+    font-size: 1em;
+    font-weight: 400;
+    padding-bottom: 25px;
+    
+  }
+
+  .titulo-h4 {
+    padding: 6%;
+    font-size: 0.75em;
+    padding-bottom: 10px; 
+  }
+
+  .container-formulario .titulo-h3, .container-formulario .titulo-h4 {
+    text-align: left; 
+    width: 100%; 
+  }
+
+
+  .span-mensagem {
+    color: #eb5757;
+  }
+
+  .formulario{
+    width: 100%;
+  }
+  
+  .container-formulario {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+  }
+
+  .form-label{
+    font-size: 1em;
+  }
+
+  .container-formulario .area-texto {
+    width: 100%;
+    height: 120px;
+  }
+
+  .container-formulario .form-input {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .container-formulario .form-input[type="checkbox"] {
+    width: auto;
+    transform: scale(1);
+    margin: 0;
+  }
+
+  .form-input {
+    margin: 10px 0 20px 0;
+  }
+
+  .area-texto {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .condicoes {
+    font-size: 0.75em;
+    display: inline-flex;
+    margin: -10px 0;
+  }
+
+  .botao {
+    padding: 12px 17px;
+    background-color: #000000;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-size: 0.75em;
+  }
+
+  .botao:hover {
+    background-color: #eb5757;
+  }
+ 
+}
