@@ -34,6 +34,8 @@
   <link rel="stylesheet" href="./css/card.css">
   <link rel="stylesheet" href="./css/carrossel.css">
   <link rel="stylesheet" href="./css/roadmap.css">
+  <link rel="stylesheet" href="./css/formulario.css">
+  <link rel="stylesheet" href="./css/form-responsivo.css">
 
   <script src="./js/index.js" defer></script>
   <script src="./js/carrossel.js" defer></script>
@@ -85,12 +87,12 @@
 
     <div class="informacoes">
       <h1 class="titulo-principal">
-        Quer entrar no mundo <br> da <span>tecnologia</span>?
+        Quer entrar no mundo <br> da <span>Tecnologia</span>?
       </h1>
 
       <p class="descricao">
         Comece agora mesmo a praticar a sua teoria, com projetos práticos, <br>
-        aqui na <span>código certo</span> inspiramos você desenvolver suas
+        aqui na <span>Código Certo</span> inspiramos você desenvolver suas
         habilidades.
       </p>
 
@@ -109,10 +111,10 @@
     <div class="title__content">
       <div class="content">
         <div class="main__title">
-          <h2 class="title">Oportunidades de <span class="text__red">voluntariado</span></h2>
+          <h2 class="title">Oportunidades de <span class="text__red">Voluntariado</span></h2>
         </div>
         <div class="content__subtitle">
-          <p class="sub__title">Explore oportunidades</p>
+          <p class="sub__title">Explore Oportunidades</p>
         </div>
       </div>
     </div>
@@ -139,7 +141,7 @@
             <button class="btn__outline">Site principal</button>
           </div>
           <div class="content__text">
-            <h5>Código <span class="text__danger">certo</span> corders [06]</h5>
+            <h5>Código <span class="text__danger">Certo</span> Corders [06]</h5>
             <p>Equipe 06 em produção de um site com bastante coisa legal.</p>
           </div>
           <button class="btn__arrow">Leia-me <i class="fa-solid fa-arrow-right"></i></button>
@@ -169,7 +171,7 @@
             <button class="btn__outline">Criação do prédio</button>
           </div>
           <div class="content__text">
-            <h5>Local físico da <span class="text__danger">empresa</span></h5>
+            <h5>Local físico da <span class="text__danger">Empresa</span></h5>
             <p>
               Olhamos para o futuro com muitas portas abertas, para você DEV
             </p>
@@ -242,9 +244,9 @@
 
   <section class="trilhas-content">
     <div class="trilhas-titulo-container">
-      <h4 class="titulo">Confira as <span class="span-titulo">trilhas</span> mais
+      <h4 class="titulo">Confira as <span class="span-titulo">Trilhas</span> mais
         procuradas na área de
-        <span class="span-titulo">tecnologia.</span>
+        <span class="span-titulo">Tecnologia.</span>
       </h4>
 
       <div class="botao-container">
@@ -264,6 +266,41 @@
     <img class="img-linha img3" src="./imagens/LinhaVermelha-quebraPagina.png">
   </div>
 
+  <section class="secao-form">
+    <div class="container-imagem">
+      <img src="./imagens/Group.png" alt="Devs" />
+    </div>
+
+    <div class="container-formulario">
+      <h4 class="titulo-h4">Deseja junta-se a nós?</h4>
+      <h2>Envie uma <span class="span-mensagem">Mensagem</span></h2>
+      <h3 class="titulo-h3">Estamos abertos a novas conexões</h3>
+      <form class="formulario" action="" method="post">
+        <label class="form-label" for="nome">Nome</label><br />
+        <input class="form-input" type="text" id="nome" name="nome" required /><br />
+
+        <label class="form-label" for="email">Email</label><br />
+        <input class="form-input" type="email" id="email" name="email" required /><br />
+
+        <label class="form-label" for="mensagem">Mensagem</label><br />
+        <textarea class="area-texto"
+          placeholder="Digite sua mensagem"
+          id="mensagem"
+          name="mensagem"
+          rows="9"
+          cols="44"
+        ></textarea>
+        <br /><br />
+
+        <input class="form-input" type="checkbox" id="termos" name="termos" value="concordo" />
+        <label class="form-label" class="condicoes" for="termos"
+          >Eu concordo com os termos e condições </label>
+        <br/><br />
+
+        <button class="botao" type="submit" value="Enviar">Enviar</button>
+      </form>
+    </div>
+  </section>
   <br>
   <br>
   <br>
