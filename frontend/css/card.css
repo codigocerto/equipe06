@@ -21,14 +21,15 @@
     font-family: var(--main-font);
 }
 
-body,
 section {
     width: var(--width);
-    height: var(--height);
     min-height: 100vh;
+    height: auto; 
     font-size: var(--font-size-base);
     background-color: var(--color-white);
+    margin-bottom: 20px;
 }
+
 
 .title__content {
     display: flex;
