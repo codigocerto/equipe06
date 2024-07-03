@@ -3,11 +3,10 @@ body{
 }
 
 .menu-container #divisoria{
-    width: 100vw;
+    width: 100%;
     height: 1px;
     color: #0000002b;
 }
-
 
 .hero .imagem-hero{
     max-width: 100%;
@@ -71,56 +70,4 @@ body{
 .setas img{
     max-width: 50px;
     
-}
-
-#h5 { 
-    text-align: center;
-    
-}
-#logo{
-
-}
-
-.icones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    height: auto;
-    gap: 20px;
-}
-.texto{
-    display: flex;
-    align-items:center;
-    flex-direction:row;
-    justify-content: center;
-    align-content: space-around;
-    gap: 5px;
-}
-.icones2{
-    display: flex;
-    justify-content:end;
-}
-
-#h6{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-@media (min-width: 1024px) {
-    .icones {
-        flex-direction: row;
-        justify-content: space-between;
-        margin-left: 90px;
-    }
-
-    .icones2 {
-        margin-right: 90px;
-    }
-    
-    #h6 {
-        margin-left: 80px;
-    }
 }
