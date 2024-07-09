@@ -1,11 +1,11 @@
 body{
-    min-height: 100vh;
+    min-width: 100%;
 }
 
-.menu-container #divisoria{
-    width: 100vw;
+.menu-container .divisoria{
+    width: 100%;
     height: 1px;
-    color: #0000002b;
+    color: #000000a6;
 }
 
 .hero .imagem-hero{

@@ -1,0 +1,46 @@
+.icones {
+  margin-top: 150px; /* será removido esta propriedade*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.texto {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  gap: 10px;
+}
+
+.texto h2 {
+  font-size: 13px;
+}
+
+.divisoria {
+  width: 100%;
+  color: #000000a6;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 767px){
+    .texto{
+       flex-direction: column;
+    }
+}
+
+@media (min-width: 1024px) {
+  #logo-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

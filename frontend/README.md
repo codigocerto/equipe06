@@ -1,32 +1,52 @@
+# Codigo Certo Coders Landing Page
+
+
 ## INICIO
 
-> git remote -v
+```bash
+git remote -v
+```
+
 origin  https://github.com/SEUGITHUB/equipe06.git (fetch)
 origin  https://github.com/SEUGITHUB/equipe06.git (push)
 
-> git remote add upstream https://github.com/codigocerto/equipe06
+```bash
+git remote add upstream https://github.com/codigocerto/equipe06
+```
 
-> git remote -v
+```bash
+git remote -v
+```
 origin  https://github.com/SEUGITHUB/equipe06.git (fetch)
 origin  https://github.com/SEUGITHUB/equipe06.git (push)
 upstream        https://github.com/codigocerto/equipe06 (fetch)
 upstream        https://github.com/codigocerto/equipe06 (push)
 
-> git fetch upstream
+```bash
+git fetch upstream
+```
 
-> git merge upstream/develop
-
+```bash
+git merge upstream/develop
+```
 
 ---
 
 ## 2a. VEZ POR DIANTE
 
-> git remote -v
+```bash
+git remote -v
+```
+
 origin  https://github.com/SEUGITHUB/equipe06.git (fetch)
 origin  https://github.com/SEUGITHUB/equipe06.git (push)
 upstream        https://github.com/codigocerto/equipe06 (fetch)
 upstream        https://github.com/codigocerto/equipe06 (push)
 
-> git fetch upstream
+```bash
+git fetch upstream
+```
 
-> git merge upstream/develop
+```bash
+git merge upstream/develop
+```

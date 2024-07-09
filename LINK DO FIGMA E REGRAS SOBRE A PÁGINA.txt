@@ -1,0 +1,58 @@
+Para acessar o link do figma - copie e cole na url do navegador 
+https://www.figma.com/design/kjrrqEtcHYyCiYwxkHmko3/Equipe-de-Desenvolvimento-codigo-certo-coders-%5B06%5D?node-id=1320-45&t=gbcTQKO5NaCYytM3-1
+
+Efeitos :
+
+Logotipo -> Ao passar o mouse em cima - hover efeito Zoom - e se clikar direcionar para a pagina 1
+
+Efeitos aplicados na pagina 1 e pagina 5 E 6
+
+Efeitos das linhas entre pagina 1 e 2 - efeito pulsar - coração - pode ser acrescentando no CSS
+
+Pagina 4 e 5 - Usar o mesmo efeito do coração - Pulsar - pode ser acrescentando no CSS
+
+
+PAGINA 1 : 
+
+Ao clikar no botão INSCREVA-SE , será redirecionado a tela de inscrição...
+
+Botão SAIBA MAIS : IRA direcionar para a página 2
+
+link oportunidades  : https://www.codigocertocoders.com.br/vagas  "use o target_blank para a pessoa abrir um link"
+
+link VALORES:USAR https://www.codigocertocoders.com.br/sobre   "use o target_blank para a pessoa abrir um link"
+
+link BENEFICIOS : Ira direcionar para a página 2C
+
+PAGINA 2 : 
+
+LINK NO LEIA-ME - > IRÁ JOGAR PARA A PAGINA 2B
+LINK NO LEIA-ME -> IRA JOGAR PARA A PAGINA  2C
+LINK NO LEIA-ME -> IRA JOGAR PARA A PAGINA 2D
+
+BOTÃO CADASTRE-SE -> IRÁ JOGAR PARA A TELA DE INSCRIÇÃO
+
+PAGINA 3 :
+
+ALTERAÇÃO DO NOME '' FORA ''  PARA  - DENTRO - 
+
+PAGINA 4 : NÃO HAVERA ALTERAÇÃO , SOMENTE ADICIONAR AS LINHAS E O EFEITO PULSAR
+
+PAGINA 5 : NÃO HAVERA ALTERAÇÃO , SOMENTE ADICIONAR AS LINHAS E O EFEITO PULSAR
+
+PAGINA 6 :
+
+LOGOTIPO -> AO PASSAR O MOUSE EM CIMA EFEITO HOVER E CASO O USARIO CLIKAR - DIRECIONAR PARA A PAGINA 1
+
+link valores: USAR https://www.codigocertocoders.com.br/sobre   "use o target_blank para a pessoa abrir um link"
+link oportunidades: https://www.codigocertocoders.com.br/vagas 
+link BENEFICIOS : Ira direcionar para a página 2C
+link Trilhas : ira direcionar para a página 4
+link comunidade: ira direcionar para  chat.whatsapp.com/CDJL6tRT5apLRXW5PWqYLe
+link da equipe de desenvolvimento : https://github.com/codigocerto/equipe06
+link do linkedin:  linkedin.com/company/codigocertocoders
+link do github: github.com/codigocerto
+link do discord: discord.gg/YkcWcPJj
+
+
+

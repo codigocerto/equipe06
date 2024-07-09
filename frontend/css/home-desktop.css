@@ -35,14 +35,14 @@
     margin-right: 90px;
   }
 
-  a {
+  .menu-desktop a {
     font-size: 17.5px;
     font-weight: 400;
     color: black;
     transition: 0.6s ease-in-out;
   }
 
-  a:hover {
+  .menu-desktop a:hover {
     padding: 5px 10px;
     background-color: #eb5757;
     border-radius: 50px;
