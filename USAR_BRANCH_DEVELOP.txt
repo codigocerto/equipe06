@@ -30,3 +30,5 @@ upstream        https://github.com/codigocerto/equipe06 (push)
 > git fetch upstream
 
 > git merge upstream/develop
+
+ok
