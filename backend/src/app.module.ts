@@ -20,13 +20,17 @@ import { SendEmailModule } from './send-email/send-email.module';
 import * as dotenv from 'dotenv';
 import { VoluntariadoEntity } from './voluntario/entities/VoluntariadoEntities';
 import { VoluntarioEntity } from './voluntario/entities/VoluntarioEntities';
+import { EnrollmentModule } from './enrollment/enrollment.module';
+import { EnrollmentService } from './enrollment/enrollment.service';
+import { EnrollmentController } from './enrollment/enrollment.controller';
+import { EnrollmentEntity } from './enrollment/entities/EnrollmentEntity';
 
 dotenv.config()
 
 @Module({
     
   imports: [
-    SacModule, VoluntarioModule, RoadmapModule,EtapaModule,SacModule,
+    VoluntarioModule, RoadmapModule,EtapaModule,SacModule, EnrollmentModule,
     TypeOrmModule.forRoot({
       type: "mysql",
       host:process.env.DB_HOST ,
@@ -34,17 +38,15 @@ dotenv.config()
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_DATABASE,
-      entities: [RoadmapEntity, EtapaEntity, SacEntity , VoluntariadoEntity , VoluntarioEntity],
+      entities: [RoadmapEntity, EtapaEntity, SacEntity , VoluntariadoEntity , VoluntarioEntity, EnrollmentEntity],
       migrations:[`${__dirname}/migration/{.ts,*.js}`],
       migrationsRun:true,
       synchronize: true
       
     }),
-    TypeOrmModule.forFeature([RoadmapEntity,EtapaEntity , SacEntity , VoluntarioEntity , VoluntariadoEntity]),
-    EtapaModule,
-    SendEmailModule,
+    TypeOrmModule.forFeature([RoadmapEntity,EtapaEntity , SacEntity , VoluntarioEntity , VoluntariadoEntity, EnrollmentEntity]),
   ],
-  controllers: [AppController, SacController , RoadmapController, EtapaController , SacController],
-  providers: [AppService , RoadmapService , EtapaService , SacService, SendEmailService],
+  controllers: [AppController, SacController , RoadmapController, EtapaController , SacController , EnrollmentController],
+  providers: [AppService , RoadmapService , EtapaService , SacService, SendEmailService , EnrollmentService],
 })
 export class AppModule {}
