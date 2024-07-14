@@ -1,2 +1,4 @@
 .vscode/settings.json
 .github/workflows/static.yml
+.github/workflows/static2.yml
+.github/workflows/main.yaml
