@@ -18,7 +18,7 @@ Aqui estão todas as capturas de tela do projeto, exibidas em sequência para f�
 ![pagina 2 parte 4 desktop](https://github.com/user-attachments/assets/15e8ad9f-3bc9-4830-9a7c-6868c0064873)
 
 ## Captura de Tela 3
-![pagina 3 desktop](https://github.com/user-attachments/assets/e04fc22f-6cb4-4fa1-9b04-1792601f2028)
+![pagina 3 atualizada](https://github.com/user-attachments/assets/35fe1b62-80e8-4835-94ef-e0eea883807a)
 
 ## Captura de Tela 4
 ![pagina 4 principal](https://github.com/user-attachments/assets/6e94e774-c2c6-4fe2-81e0-565293950dc7)
