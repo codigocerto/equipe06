@@ -56,6 +56,8 @@
     <script src="./js/menu-hamburguer.js" defer></script>
     <script src="./js/carrossel.js" defer></script>
     <script src="./js/roadmap.js" defer></script>
+    <script src="./js/submitForms.js" defer></script>
+
   </head>
 
   <body>
@@ -395,16 +397,16 @@
         <h4 class="titulo-h4">Deseja juntar-se a nós?</h4>
         <h2>Envie uma <span class="span-mensagem">Mensagem</span></h2>
         <h3 class="titulo-h3">Estamos abertos a novas conexões</h3>
-        <form class="formulario" action="" method="post">
+        <form class="formulario" id="contactForms" action="" method="post">
           <label class="form-label" for="nome">Nome</label><br />
           <input
             class="form-input"
             type="text"
-            id="nome"
-            name="nome"
+            id="name"
+            name="name"
             required
           /><br />
-
+        
           <label class="form-label" for="email">Email</label><br />
           <input
             class="form-input"
@@ -413,18 +415,19 @@
             name="email"
             required
           /><br />
-
+        
           <label class="form-label" for="mensagem">Mensagem</label><br />
           <textarea
             class="area-texto"
             placeholder="Digite sua mensagem"
-            id="mensagem"
-            name="mensagem"
+            id="message"
+            name="content"
             rows="9"
             cols="44"
+            required
           ></textarea>
           <br /><br />
-
+        
           <input
             class="form-input"
             type="checkbox"
@@ -436,9 +439,10 @@
             >Eu concordo com os termos e condições
           </label>
           <br /><br />
-
+        
           <button class="botao" type="submit" value="Enviar">Enviar</button>
         </form>
+        
       </div>
     </section>
 
