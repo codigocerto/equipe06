@@ -1,7 +1,7 @@
 :root {
     --main-font: "Roboto", sans-serif;
     --font-size-base: 16px;
-    --font-size-lg: 2.5em;
+    --font-size-lg: 2em;
     --font-size-md: 1.5em;
     --font-size-sm: 1em;
     --font-weight-regular: 400;
@@ -24,12 +24,11 @@
 section {
     width: var(--width);
     min-height: 100vh;
-    height: auto; 
+    height: auto;
     font-size: var(--font-size-base);
     background-color: var(--color-white);
     margin-bottom: 20px;
 }
-
 
 .title__content {
     display: flex;
@@ -77,6 +76,10 @@ section {
     display: flex;
     width: var(--width);
     max-width: var(--width);
+}
+
+.img {
+    width: 100%;
     object-fit: cover;
 }
 
@@ -92,6 +95,12 @@ section {
 }
 
 /* responsive */
+@media screen and (min-width: 320px) {
+    .card__content {
+        margin: 20px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .card__content {
         display: flex;
