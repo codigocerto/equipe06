@@ -16,7 +16,6 @@ import { EtapaController } from './etapa/etapa.controller';
 import { SacService } from './sac/sac.service';
 import { SacEntity } from './sac/entities/SacEntity';
 import { SendEmailService } from './send-email/send-email.service';
-import { SendEmailModule } from './send-email/send-email.module';
 import * as dotenv from 'dotenv';
 import { VoluntariadoEntity } from './voluntario/entities/VoluntariadoEntities';
 import { VoluntarioEntity } from './voluntario/entities/VoluntarioEntities';
