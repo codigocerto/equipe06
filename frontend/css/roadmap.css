@@ -2,8 +2,7 @@
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    height: auto;
+    min-height: auto;
 }
 
 .trilhas-titulo-container {
@@ -76,16 +75,27 @@
     display: flex;
 }
 
-.item-img {
-    width: 48px;
-    height: 164px;
+.item-imagem-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-right: 15px;
+    gap: 10px;
 }
 
-.ultimo-item-img {
+.item-img-quadrado {
     width: 48px;
     height: 48px;
-    margin-right: 15px;
+}
+
+.item-img-linha {
+    width: 2px;
+    height: 60px;
+}
+
+.img_desabilitada {
+    display: none;
 }
 
 .item-content {
@@ -102,55 +112,77 @@
     font-size: 16px;
 }
 
-.img-itemContainer {
-    display: flex;
-    width: 100%;
-    justify-content: right;
-}
 
-.img-SetaPBaixo {
-    width: 100px;
-    height: 100px;
-    margin-top: -20px;
-    margin-right: -20px;
-    margin-bottom: -50px;
-}
-
-@keyframes move-line {
+@keyframes pulse {
     0% {
-        transform: translateX(0%);
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
     }
 
     100% {
-        transform: translateX(-150%);
+        transform: scale(1);
     }
 }
 
 .Linha-separadora {
     width: 100%;
     display: flex;
-    gap: 30px;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     height: auto;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .img-linha {
-    animation: move-line 5s linear infinite;
+    animation: pulse 3s infinite;
+    width: 350px;
 }
 
+#img2,
+#img3 {
+    display: none;
+}
 
-@media (min-width: 1440px) {
+@media (min-width: 530px) {
+    .img-linha {
+        width: 430px;
+    }
+}
+
+@media (min-width: 768px) {
+    #img2 {
+        display: block;
+    }
+
+    .img-linha {
+        width: 365px;
+    }
+
+    .Linha-separadora {
+        gap: 10px;
+    }
+
+    .item-img-linha {
+        height: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+
     .trilhas-content {
         flex-direction: row;
-        padding: 50px 20px;
         justify-content: space-between;
         max-width: 100%;
+        padding: 0 50px;
     }
 
     .trilhas-titulo-container {
-        width: 616px;
+        width: 500px;
         height: 310px;
         display: flex;
         flex-direction: column;
@@ -180,14 +212,50 @@
 
 
     .timeline-roadmap {
-        width: 616px;
+        width: 400px;
         height: auto;
     }
 
-    .img-SetaPBaixo {
-        margin-top: 0;
-        margin-right: 0;
-        margin-bottom: 0;
+
+    .img-linha {
+        width: 325px;
     }
 
+    #img2,
+    #img3 {
+        display: block;
+    }
+
+    .Linha-separadora {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .img-linha {
+        width: 380px;
+    }
+
+    .trilhas-titulo-container {
+        width: 600px;
+    }
+
+    .timeline-roadmap {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .img-linha {
+        width: 450px;
+    }
+
+    .trilhas-titulo-container {
+        width: 641px;
+    }
+
+    .timeline-roadmap {
+        width: 641px;
+    }
 }
