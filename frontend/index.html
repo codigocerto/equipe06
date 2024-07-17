@@ -27,30 +27,30 @@
 
   <link rel="shortcut icon" href="./src/imagens/logo-favicon.svg" type="image/x-icon" />
 
-    <!-- javascript -->
-    <script src="./js/menu-hamburguer.js" defer></script>
-    <script src="./js/carrossel.js" defer></script>
-    <script src="./js/roadmap.js" defer></script>
-    <script src="./js/submitForms.js" defer></script>
-
-  </head>
-  <!-- css -->
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/home.css" />
-  <link rel="stylesheet" href="./css/menu-hamburguer.css" />
-  <link rel="stylesheet" href="./css/home-desktop.css" />
-  <link rel="stylesheet" href="./css/card.css" />
-  <link rel="stylesheet" href="./css/carrossel.css" />
-  <link rel="stylesheet" href="./css/roadmap.css" />
-  <link rel="stylesheet" href="./css/formulario.css" />
-  <link rel="stylesheet" href="./css/form-responsivo.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
-
   <!-- javascript -->
   <script src="./js/menu-hamburguer.js" defer></script>
   <script src="./js/carrossel.js" defer></script>
   <script src="./js/roadmap.js" defer></script>
-  <script src="./js/paginas.js" defer></script>
+  <script src="./js/submitForms.js" defer></script>
+
+</head>
+<!-- css -->
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/home.css" />
+<link rel="stylesheet" href="./css/menu-hamburguer.css" />
+<link rel="stylesheet" href="./css/home-desktop.css" />
+<link rel="stylesheet" href="./css/card.css" />
+<link rel="stylesheet" href="./css/carrossel.css" />
+<link rel="stylesheet" href="./css/roadmap.css" />
+<link rel="stylesheet" href="./css/formulario.css" />
+<link rel="stylesheet" href="./css/form-responsivo.css" />
+<link rel="stylesheet" href="./css/footer.css" />
+
+<!-- javascript -->
+<script src="./js/menu-hamburguer.js" defer></script>
+<script src="./js/carrossel.js" defer></script>
+<script src="./js/roadmap.js" defer></script>
+<script src="./js/paginas.js" defer></script>
 </head>
 
 <body>
@@ -140,9 +140,11 @@
             </h5>
             <p>Equipe 06 em produção de um site com bastante coisa legal.</p>
           </div>
-          <button class="btn__arrow">
-            Leia-me <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <a href="./pages/pageCoders.html" target="_blank">
+            <button class="btn__arrow">
+              Leia-me <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
         </div>
       </div>
 
@@ -161,9 +163,11 @@
               Olhamos para o futuro com muitas portas abertas, para você DEV
             </p>
           </div>
-          <button class="btn__arrow">
-            Leia-me <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <a href="" target="_blank">
+            <button class="btn__arrow">
+              Leia-me <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
         </div>
       </div>
 
@@ -183,9 +187,11 @@
               ajudar outras.
             </p>
           </div>
-          <button id="btn_adoteUmJr" class="btn__arrow">
-            Leia-me <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <a href="./pages/adoteUmJR.html" target="_blank">
+            <button class="btn__arrow">
+              Leia-me <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -264,47 +270,21 @@
       <h3 class="titulo-h3">Estamos abertos a novas conexões</h3>
       <form class="formulario" id="contactForms" action="" method="post">
         <label class="form-label" for="nome">Nome</label><br />
-        <input
-          class="form-input"
-          type="text"
-          id="name"
-          name="name"
-          required
-        /><br />
-      
+        <input class="form-input" type="text" id="name" name="name" required /><br />
+
         <label class="form-label" for="email">Email</label><br />
-        <input
-          class="form-input"
-          type="email"
-          id="email"
-          name="email"
-          required
-        /><br />
-      
+        <input class="form-input" type="email" id="email" name="email" required /><br />
+
         <label class="form-label" for="mensagem">Mensagem</label><br />
-        <textarea
-          class="area-texto"
-          placeholder="Digite sua mensagem"
-          id="message"
-          name="content"
-          rows="9"
-          cols="44"
-          required
-        ></textarea>
+        <textarea class="area-texto" placeholder="Digite sua mensagem" id="message" name="content" rows="9" cols="44"
+          required></textarea>
         <br /><br />
-      
-        <input
-          class="form-input"
-          type="checkbox"
-          id="termos"
-          name="termos"
-          value="concordo"
-        />
-        <label class="form-label" class="condicoes" for="termos"
-          >Eu concordo com os termos e condições
+
+        <input class="form-input" type="checkbox" id="termos" name="termos" value="concordo" />
+        <label class="form-label" class="condicoes" for="termos">Eu concordo com os termos e condições
         </label>
         <br /><br />
-      
+
         <button class="botao" type="submit" value="Enviar">Enviar</button>
       </form>
     </div>
