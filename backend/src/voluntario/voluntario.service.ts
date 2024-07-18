@@ -17,7 +17,7 @@ export class VoluntarioService {
         @InjectRepository(VoluntariadoEntity)
         private readonly voluntariadoRepository : Repository<VoluntariadoEntity>,
 
-        private readonly sendEmail : SendEmailService
+        private readonly sendEmailService : SendEmailService
     ){}
 
     async vagas(obj : VoluntarioEntity){
@@ -53,13 +53,18 @@ export class VoluntarioService {
         checkVga.qtdVacancies = checkVga.qtdVacancies - 1
 
         if(checkVga.qtdVacancies < 0 ){
-            throw new Error("Vaga indisponivel no momento2")
+            throw new Error("Vaga indisponivel no momento")
         }
         this.voluntarioRepository.save(checkVga)
         obj.vaga_id = id
         const add = await this.voluntariadoRepository.save(obj)
 
-        this.sendEmail.sendEmail(obj , checkVga.title)
+        await this.sendEmailService.sendMail(
+            obj.email,
+            `Inscrição Bem-Sucedida`,
+            `Cofirmação de Inscrição para a vaga  ${checkVga.title}\n
+            Obrigado por nos escolher!`
+        )
 
         return add
 

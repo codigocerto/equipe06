@@ -27,22 +27,30 @@
 
   <link rel="shortcut icon" href="./src/imagens/logo-favicon.svg" type="image/x-icon" />
 
-  <!-- css -->
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/home.css" />
-  <link rel="stylesheet" href="./css/menu-hamburguer.css" />
-  <link rel="stylesheet" href="./css/home-desktop.css" />
-  <link rel="stylesheet" href="./css/card.css" />
-  <link rel="stylesheet" href="./css/carrossel.css" />
-  <link rel="stylesheet" href="./css/roadmap.css" />
-  <link rel="stylesheet" href="./css/formulario.css" />
-  <link rel="stylesheet" href="./css/form-responsivo.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
-
   <!-- javascript -->
   <script src="./js/menu-hamburguer.js" defer></script>
   <script src="./js/carrossel.js" defer></script>
   <script src="./js/roadmap.js" defer></script>
+  <script src="./js/submitForms.js" defer></script>
+
+</head>
+<!-- css -->
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/home.css" />
+<link rel="stylesheet" href="./css/menu-hamburguer.css" />
+<link rel="stylesheet" href="./css/home-desktop.css" />
+<link rel="stylesheet" href="./css/card.css" />
+<link rel="stylesheet" href="./css/carrossel.css" />
+<link rel="stylesheet" href="./css/roadmap.css" />
+<link rel="stylesheet" href="./css/formulario.css" />
+<link rel="stylesheet" href="./css/form-responsivo.css" />
+<link rel="stylesheet" href="./css/footer.css" />
+
+<!-- javascript -->
+<script src="./js/menu-hamburguer.js" defer></script>
+<script src="./js/carrossel.js" defer></script>
+<script src="./js/roadmap.js" defer></script>
+<script src="./js/paginas.js" defer></script>
 </head>
 
 <body>
@@ -132,9 +140,11 @@
             </h5>
             <p>Equipe 06 em produção de um site com bastante coisa legal.</p>
           </div>
-          <button class="btn__arrow">
-            Leia-me <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <a href="./pages/pageCoders.html" target="_blank">
+            <button class="btn__arrow">
+              Leia-me <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
         </div>
       </div>
 
@@ -153,9 +163,11 @@
               Olhamos para o futuro com muitas portas abertas, para você DEV
             </p>
           </div>
-          <button class="btn__arrow">
-            Leia-me <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <a href="" target="_blank">
+            <button class="btn__arrow">
+              Leia-me <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
         </div>
       </div>
 
@@ -175,9 +187,11 @@
               ajudar outras.
             </p>
           </div>
-          <button class="btn__arrow">
-            Leia-me <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <a href="./pages/adoteUmJR.html" target="_blank">
+            <button class="btn__arrow">
+              Leia-me <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -202,7 +216,7 @@
         </li>
         <li class="card">
           <div class="img">
-            <img src="./imagens/Img2-carrossel.png" alt="img" draggable="false" />
+            <img src="./imagens/comunidade_carrosselIMG.svg" alt="img" draggable="false" />
           </div>
         </li>
         <li class="card">
@@ -212,7 +226,7 @@
         </li>
         <li class="card">
           <div class="img">
-            <img src="./imagens/Img1-carrossel.png" alt="img" draggable="false" />
+            <img src="./imagens/+1000_carrosselIMG.svg" alt="img" draggable="false" />
           </div>
         </li>
       </ul>
@@ -240,9 +254,9 @@
   </section>
 
   <div class="Linha-separadora">
-    <img class="img-linha img1" src="./imagens/LinhaVermelha-quebraPagina.png" />
-    <img class="img-linha img2" src="./imagens/LinhaVermelha-quebraPagina.png" />
-    <img class="img-linha img3" src="./imagens/LinhaVermelha-quebraPagina.png" />
+    <img class="img-linha" id="img1" src="./imagens/LinhaVermelha-quebraPagina.png" />
+    <img class="img-linha" id="img2" src="./imagens/LinhaVermelha-quebraPagina.png" />
+    <img class="img-linha" id="img3" src="./imagens/LinhaVermelha-quebraPagina.png" />
   </div>
 
   <section class="secao-form">
@@ -254,16 +268,16 @@
       <h4 class="titulo-h4">Deseja juntar-se a nós?</h4>
       <h2>Envie uma <span class="span-mensagem">Mensagem</span></h2>
       <h3 class="titulo-h3">Estamos abertos a novas conexões</h3>
-      <form class="formulario" action="" method="post">
+      <form class="formulario" id="contactForms" action="" method="post">
         <label class="form-label" for="nome">Nome</label><br />
-        <input class="form-input" type="text" id="nome" name="nome" required /><br />
+        <input class="form-input" type="text" id="name" name="name" required /><br />
 
         <label class="form-label" for="email">Email</label><br />
         <input class="form-input" type="email" id="email" name="email" required /><br />
 
         <label class="form-label" for="mensagem">Mensagem</label><br />
-        <textarea class="area-texto" placeholder="Digite sua mensagem" id="mensagem" name="mensagem" rows="9"
-          cols="44"></textarea>
+        <textarea class="area-texto" placeholder="Digite sua mensagem" id="message" name="content" rows="9" cols="44"
+          required></textarea>
         <br /><br />
 
         <input class="form-input" type="checkbox" id="termos" name="termos" value="concordo" />

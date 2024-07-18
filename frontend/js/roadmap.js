@@ -18,22 +18,22 @@ const renderizaTrilha = (stack) => {
         .then(data => {
 
             nomeDaStack.textContent = stack
-            console.log(data)
             linhaDoTempo.innerHTML = '';
 
             data.forEach((item, index) => {
                 const itemDaTimeline = document.createElement('div');
                 itemDaTimeline.className = 'timeline-item'
-                let imgDoItem = "./imagens/item-img.png"
-                let classeImgItem = "item-img"
+                let classeImgItem = "item-img-linha"
 
                 if (index === data.length - 1) {
-                    imgDoItem = "./imagens/img-UltimoItem.png"
-                    classeImgItem = "ultimo-item-img"
+                    classeImgItem = "img_desabilitada"
                 }
 
                 itemDaTimeline.innerHTML = `
-            <img class=${classeImgItem} src=${imgDoItem} />
+            <div class="item-imagem-container">
+                <img class="item-img-quadrado" src="./imagens/img-quadrado.png" />
+                <img class=${classeImgItem} src="./imagens/img_linha.png" />
+            </div>
             <div class="item-content">
                 <h6 class="item-titulo">${item.name}</h6>
                 <p class="item-descricao">${item.description}</p>
@@ -42,14 +42,6 @@ const renderizaTrilha = (stack) => {
 
                 linhaDoTempo.appendChild(itemDaTimeline)
             })
-
-            const imgSetaPBaixo = document.createElement('div');
-            imgSetaPBaixo.className = 'img-itemContainer'
-
-            imgSetaPBaixo.innerHTML = `
-            <img class="img-SetaPBaixo" src="./imagens/iconeSetaPBaixo.png" />
-        `
-            linhaDoTempo.appendChild(imgSetaPBaixo)
         })
 }
 

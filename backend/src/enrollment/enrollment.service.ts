@@ -4,6 +4,7 @@ import { EnrollmentEntity } from './entities/EnrollmentEntity';
 import { Repository } from 'typeorm';
 import {v4 as uuidv4} from "uuid"
 import { EnrollmentDTO } from './dtos/EnrollmentDTO.dto';
+import { SendEmailService } from 'src/send-email/send-email.service';
 
 
 @Injectable()
@@ -12,6 +13,7 @@ export class EnrollmentService {
     constructor(
         @InjectRepository(EnrollmentEntity)
         private readonly enrollmentRepository: Repository<EnrollmentEntity>,
+        private readonly sendEmailService : SendEmailService
       ) {}
     
     async insertEnrollment(dto : EnrollmentEntity){
@@ -22,7 +24,12 @@ export class EnrollmentService {
             if(!dto.email || !dto.name || !dto.phone || !dto.hability ){
                 throw new Error(`Field name , email , phone or hability are empty`)
             }
-    
+            await this.sendEmailService.sendMail(
+                dto.email,
+                `Inscrição Bem-Sucedida`,
+                `Olá ${dto.name} sua inscrição foi bem sucedida, em breve entramos em contato\n
+                Obrigado por nos escolher, e boa sorte nessa jornada`
+            )
             return this.enrollmentRepository.save(dto)
         } catch (error) {
             throw new Error(`Failed to insert enrollment: ${error.message}`);

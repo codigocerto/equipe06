@@ -5,6 +5,7 @@ import { Repository } from 'typeorm';
 import { SendEmailService } from 'src/send-email/send-email.service';
 import { SacDTO } from './dto/SacDTO.dto';
 
+
 @Injectable()
 export class SacService {
 
@@ -22,8 +23,16 @@ export class SacService {
         }
         const addSac = await this.sacRepository.save(dto)
         
-        this.sendEmailService.sendEmail(addSac)
-        console.log( this.sendEmailService.sendEmail(addSac))
+        // this.sendEmailService.sendEmail(addSac)
+        // console.log( this.sendEmailService.sendEmail(addSac))
+        
+        await this.sendEmailService.sendMail(
+            dto.email,
+            'Formulario enviado com sucesso',
+            `Obrigado nos enviar essa mensagem\n
+            ${dto.content}`
+        )
+        
 
         return("Formulario enviado com sucesso")
         

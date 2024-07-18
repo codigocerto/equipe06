@@ -7,36 +7,34 @@ import * as nodemailer from 'nodemailer';
 @Injectable()
 export class SendEmailService {
   private transporter;
-  constructor(){
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+  constructor() {
+    this.transporter = nodemailer.createTransport({
+      host: 'smtp.mailgun.org',
+      port: 587,
+      secure:false,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
   }
 
-   async sendEmail(emailDto : SendEmailDTO , vaga? : string) {
-      const msg = {
-        to: emailDto.email,
-        from: process.env.EMAIL_USER,
-        subject: 'Formulário Recebido',
-        text: `Olá ${emailDto.name},Recebemos o seu formulário: ${emailDto.content || vaga}Obrigado!`,
-      };
+  async sendMail(to: string, subject: string, text: string) {
+    const mailOptions = {
+      from : process.env.EMAIL_USER,
+      to,
+      subject,
+      text,
+    
+    };
 
-    sgMail.send(msg)
+    try {
+      const info = await this.transporter.sendMail(mailOptions);
+      console.log('Email sent: ', info.response);
+    } catch (error) {
+      console.error('Error sending email: ', error);
+    }
   }
-  
-
-  // async sendEmail(emailDto : SendEmailDTO , vaga? : string) {
-  //         const msg = {
-  //         to: emailDto.email,
-  //         from: process.env.EMAIL_USER,
-  //         subject: 'Formulário Recebido',
-  //         text: `Olá ${emailDto.name},Recebemos o seu formulário:${emailDto.content || vaga}Obrigado!`,
-  //       };
-
-  //       try {
-  //         await sgMail.send(msg)
-  //       } catch (error) {
-  //         console.error('Error sending email:', error.response ? error.response.body : error.message);
-  //         throw new Error('Error send email')
-  //       }
-  //   }
 
 }
