@@ -4,7 +4,7 @@ import { SacEntity } from './entities/SacEntity';
 import { Repository } from 'typeorm';
 import { SendEmailService } from 'src/send-email/send-email.service';
 import { SacDTO } from './dto/SacDTO.dto';
-
+import * as template from './sac.template';
 
 @Injectable()
 export class SacService {
@@ -27,12 +27,16 @@ export class SacService {
         // console.log( this.sendEmailService.sendEmail(addSac))
         
         await this.sendEmailService.sendMail(
-            dto.email,
+            process.env.EMAIL_USER,
             'Formulario enviado com sucesso',
-            `Obrigado nos enviar essa mensagem\n
-            ${dto.content}`
+            template.textoEmail(dto.name,dto.email,dto.content)
         )
         
+        await this.sendEmailService.sendMail(
+            dto.email,
+            "Obrigado pelo contato!",
+            template.textoEmailObrigado(dto.name)
+        )
 
         return("Formulario enviado com sucesso")
         

@@ -5,7 +5,8 @@ import { Repository } from 'typeorm';
 import { VoluntarioEntity } from './entities/VoluntarioEntities';
 import { VoluntariadoEntity } from './entities/VoluntariadoEntities';
 import { SendEmailService } from 'src/send-email/send-email.service';
-import {v4 as uuidv4} from "uuid"
+import {v4 as uuidv4} from "uuid";
+import * as template from './voluntario.template';
 
 @Injectable()
 export class VoluntarioService {
@@ -62,8 +63,13 @@ export class VoluntarioService {
         await this.sendEmailService.sendMail(
             obj.email,
             `Inscrição Bem-Sucedida`,
-            `Cofirmação de Inscrição para a vaga  ${checkVga.title}\n
-            Obrigado por nos escolher!`
+            template.textoInscricaoObrigado(obj.name, checkVga.title)
+        )
+        
+        await this.sendEmailService.sendMail(
+            process.env.EMAIL_USER,
+            `Nova Inscrição Bem-Sucedida`,
+            template.textoInscricaoNova(obj.name,checkVga.title)
         )
 
         return add
