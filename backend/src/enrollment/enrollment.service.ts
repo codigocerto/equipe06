@@ -5,7 +5,7 @@ import { Repository } from 'typeorm';
 import {v4 as uuidv4} from "uuid"
 import { EnrollmentDTO } from './dtos/EnrollmentDTO.dto';
 import { SendEmailService } from 'src/send-email/send-email.service';
-
+import * as template from './enrollment.template';
 
 @Injectable()
 export class EnrollmentService {
@@ -27,8 +27,12 @@ export class EnrollmentService {
             await this.sendEmailService.sendMail(
                 dto.email,
                 `Inscrição Bem-Sucedida`,
-                `Olá ${dto.name} sua inscrição foi bem sucedida, em breve entramos em contato\n
-                Obrigado por nos escolher, e boa sorte nessa jornada`
+                template.textoInscricaoObrigado(dto.name,dto.hability)
+            )
+            await this.sendEmailService.sendMail(
+                process.env.EMAIL_USER,
+                `Nova Inscrição Bem-Sucedida`,
+                template.textoInscricaoNova(dto.name,dto.hability)
             )
             return this.enrollmentRepository.save(dto)
         } catch (error) {
