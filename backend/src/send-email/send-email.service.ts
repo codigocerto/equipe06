@@ -22,7 +22,7 @@ export class SendEmailService {
 
   async sendMail(to: string, subject: string, html: string) {
     const mailOptions = {
-      from : process.env.EMAIL_USER,
+      from : process.env.FROM_EMAIL,
       to,
       subject,
       html,
