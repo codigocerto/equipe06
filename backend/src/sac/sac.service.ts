@@ -22,10 +22,7 @@ export class SacService {
             dto.date = Date()
         }
         const addSac = await this.sacRepository.save(dto)
-        
-        // this.sendEmailService.sendEmail(addSac)
-        // console.log( this.sendEmailService.sendEmail(addSac))
-        
+    
         await this.sendEmailService.sendMail(
             process.env.EMAIL_USER,
             'Formulario enviado com sucesso',

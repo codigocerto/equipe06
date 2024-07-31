@@ -31,7 +31,7 @@ export class EnrollmentService {
               );
               
             await this.sendEmailService.sendMail(
-                process.env.EMAIL_USER,
+                process.env.EMAIL_COMUNITY,
                 'Nova Inscrição Bem-Sucedida',
                 template.textoInscricaoNova(dto.name, dto.hability)
             );
