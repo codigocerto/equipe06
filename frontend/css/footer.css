@@ -40,7 +40,7 @@
 @media (min-width: 1024px) {
   #logo-footer {
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
   }
 }

@@ -24,9 +24,9 @@
     text-align: left;  
   }
   
-  .titulo-h3 {
+  .titulo-h5 {
     font-size: 0.90em;
-    font-weight: 400;
+    font-weight: 500;
     padding-bottom: 25px;
     
   }
@@ -36,7 +36,7 @@
     padding-bottom: 12px; 
   }
   
-  .container-formulario h3, .container-formulario h4 {
+  .container-formulario h5, .container-formulario h4 {
     text-align: left; 
     width: 100%; 
   }
@@ -107,6 +107,7 @@
   .botao:hover {
     background-color: #eb5757;
   }
+
   
 }
 
