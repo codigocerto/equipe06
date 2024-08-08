@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Inscrição</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/inscricao.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="menu-container">
+      <img
+        src="../imagens/logo-menu.png"
+        alt="logo CodigoCerto"
+        class="logo-menu"
+      />
+
+      <nav class="menu-desktop">
+        <ul>
+          <li>
+            <a href="https://www.codigocertocoders.com.br/sobre" target="_blank"
+              >Valores</a
+            >
+          </li>
+          <li>
+            <a href="https://www.codigocertocoders.com.br/vagas" target="_blank"
+              >Oportunidades</a
+            >
+          </li>
+          <li><a href="beneficios">Benefícios</a></li>
+        </ul>
+      </nav>
+
+      <nav id="burger-menu">
+        <span> </span>
+
+        <div id="menu">
+          <img class="logo-burger" src="../imagens/logo-menu.png" alt="logo menu">
+          <ul>
+            <li><a href="inicio">Início</a></li>
+            <li>
+              <a
+                href="https://www.codigocertocoders.com.br/sobre"
+                target="_blank"
+                >Valores</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.codigocertocoders.com.br/vagas"
+                target="_blank"
+                >Oportunidades</a
+              >
+            </li>
+            <li><a href="beneficios">Benefícios</a></li>
+            <li><a href="contato">Contato</a></li>
+            <li><a href="inscreva-se" class="botao-burger">Inscreva-se</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container-form">
+      <div class="formulario">
+        <h5 class="titulo-h5">Quase lá</h5>
+        <img
+          class="img-mapa"
+          src="../../Desing Equipe [06]/image/Vector.svg"
+          alt="Imagem do Mapa"
+        />
+        <h1 class="titulo-h1">Inscreva-<span>se</span></h1>
+        <h2 class="titulo-h2">Preencha seus dados</h2>
+
+        <form class="formulario" method="post">
+          <div class="largura-form">
+            <div class="input-grupo">
+              <label class="form-label" for="nome">Nome:</label><br />
+              <input
+                class="form-input"
+                type="text"
+                id="nome"
+                name="nome"
+                required
+              /><br />
+
+              <label class="form-label" for="email">Email:</label><br />
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                required
+              /><br />
+            </div>
+            <div class="input-grupo coluna-3">
+              <label for="phone" class="form-label">Telefone:</label><br />
+              <input
+                class="form-input"
+                type="tel"
+                id="telefone"
+                name="telefone"
+                required
+              /><br />
+            </div>
+          </div>
+          <h4 class="titulo-h4">Habilidades:</h4>
+          <div class="container-select">
+            <div class="colunas">
+              <div>
+                <input
+                  class="input-select"
+                  type="checkbox"
+                  name="Front-End"
+                  id="Front-End"
+                />
+                <label for="Front-End">Front-End</label>
+              </div>
+
+              <div>
+                <input
+                  class="input-select"
+                  type="checkbox"
+                  name="Back-End"
+                  id="Back-End"
+                />
+                <label for="Back-End">Back-End</label>
+              </div>
+
+              <div>
+                <input
+                  class="input-select"
+                  type="checkbox"
+                  name="design"
+                  id="design"
+                />
+                <label for="design">UI/UX DESIGN</label>
+              </div>
+            </div>
+
+            <div class="colunas">
+              <div>
+                <input
+                  class="input-select"
+                  type="checkbox"
+                  name="testes"
+                  id="testes"
+                />
+                <label for="testes">Q/A</label>
+              </div>
+
+              <div>
+                <input
+                  class="input-select"
+                  type="checkbox"
+                  name="Banco de dados"
+                  id="Banco de dados"
+                />
+                <label for="Banco de dados">Banco de dados</label>
+              </div>
+
+              <div>
+                <input
+                  class="input-select"
+                  type="checkbox"
+                  name="Outro"
+                  id="Outro"
+                />
+                <label class="form-label" for="Outro">Outro</label>
+              </div>
+            </div>
+          </div>
+          <input
+            class="condicoes"
+            type="checkbox"
+            id="termos"
+            name="termos"
+            value="concordo"
+          />
+          <label for="termos">I accept the terms </label>
+          <br /><br />
+
+          <div class="botao-container">
+            <button class="botao" type="submit" value="Enviar">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <hr id="divisoria" />
+      <div class="container-imagem">
+        <img
+          class="devs"
+          src="../../Desing Equipe [06]/image/inscrição.svg"
+          alt="profissionais de Ti"
+          title="Profissionais de Ti"
+        />
+
+        <img
+          class="img-logo"
+          src="../imagens/logo-menu.png"
+          alt="Logo Código Certo"
+        />
+      </div>
+    </section>
+    <script>
+      const burgerMenu = document.getElementById("burger-menu");
+      const overlay = document.getElementById("menu");
+      burgerMenu.addEventListener("click", function () {
+        burgerMenu.classList.toggle("close");
+        overlay.classList.toggle("overlay");
+      });
+    </script>
+  </body>
+</html>

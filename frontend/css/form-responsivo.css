@@ -16,7 +16,7 @@
     padding-bottom: 24px;
   }
 
-  .titulo-h3 {
+  .titulo-h5 {
     font-size: 0.9em;
     font-weight: 400;
     padding-bottom: 25px;
@@ -98,7 +98,7 @@
     padding-bottom: 24px;
   }
 
-  .titulo-h3 {
+  .titulo-h5 {
     font-size: 1.5em;
     font-weight: 400;
     padding-bottom: 25px;
@@ -197,7 +197,7 @@
     text-align: left;  
   }
 
-  .titulo-h3 {
+  .titulo-h5 {
     font-size: 1em;
     font-weight: 400;
     padding-bottom: 25px;
@@ -210,7 +210,7 @@
     padding-bottom: 10px; 
   }
 
-  .container-formulario .titulo-h3, .container-formulario .titulo-h4 {
+  .container-formulario .titulo-h5, .container-formulario .titulo-h4 {
     text-align: left; 
     width: 100%; 
   }
