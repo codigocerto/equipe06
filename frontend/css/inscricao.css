@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto;
 }
 body {
   width: 100%;
@@ -31,11 +32,14 @@ body {
   right: 0px;
   top: 10px;
   width: 33px;
+  background: #000000;
 }
 #burger-menu span {
   right: 20px;
   top: -30px;
   width: 33px;
+  background:#000000;
+  z-index: 3;
 }
 #burger-menu span:after {
   left: 0px;
@@ -60,38 +64,42 @@ body {
   width: 0;
 }
 
+.logo-burger{
+  display: flex;
+  width: 100px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
 #menu {
   z-index: 1;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
-  height: 0;
+  left: 0;
   visibility: hidden;
-  opacity: 0;
   text-align: center;
-  padding-top: 20px;
   transition: all 0.5s ease-in-out;
+  background: #fff;
 }
 #menu.overlay {
   visibility: visible;
   opacity: 1;
-  padding-top: 90px;
 }
 #menu ul {
   margin: auto;
-  padding: 0 0 100vh 0;
+  padding: 0 0 50vh 0;
   background: #fff;
 }
 #menu li {
   list-style: none;
-  margin-right: 25px;
 }
 #menu a {
   margin-bottom: 40px;
   display: block;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   color: #000000;
 }
@@ -642,6 +650,7 @@ body {
     padding-left: 5%;
     position: relative;
   }
+
   .titulo-h5 {
     font-size: 1em;
     line-height: 24px;
