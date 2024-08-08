@@ -1,46 +1,101 @@
-.icones {
-  margin-top: 150px; /* será removido esta propriedade*/
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  position: relative;
-}
+@media (max-width: 320px) {
+  .icones {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
 
-.texto {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  align-content: space-around;
-  gap: 10px;
-}
+  .texto {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+  }
 
-.texto h2 {
-  font-size: 13px;
-}
+  .texto h2 {
+    font-size: 13px;
+  }
 
-.divisoria {
-  width: 100%;
-  color: #000000a6;
-}
+  .redes-sociais {
+    display: flex;
+    gap: 10px;
+  }
 
-.redes-sociais {
-  display: flex;
-  gap: 10px;
+  #logo-footer {
+    position: absolute;
+    width: 80px;
+    bottom: -65px;
+    padding-bottom: 10px;
+  }
 }
+@media (max-width: 769px) {
+  .icones {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
+  .texto {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 0.7em;
+  }
 
-@media (max-width: 767px){
-    .texto{
-       flex-direction: column;
-    }
+  .divisoria {
+    width: 100%;
+    height: 2px;
+    background-color: #090909;
+  }
+  #logo-footer {
+    position: absolute;
+    width: 80px;
+    bottom: -65px;
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .icones {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .texto {
+    display: flex;
+    gap: 40px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+
+  .divisoria {
+    width: 100%;
+    height: 2px;
+    color: #000000;
+  }
+  .redes-sociais {
+    display: flex;
+    gap: 13px;
+    position: absolute;
+    right: 40px;
+    top: 0;
+  }
   #logo-footer {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -10px;
+    left: 25px;
   }
 }
