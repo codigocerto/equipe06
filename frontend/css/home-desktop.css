@@ -1,3 +1,10 @@
+.logo-menu {
+  animation: transform 0.3s ease; 
+}
+.logo-menu:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 430px) {
   .menu-desktop {
     display: none;
