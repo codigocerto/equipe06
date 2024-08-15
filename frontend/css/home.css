@@ -4,8 +4,6 @@ body{
 
 #rows {
     width: 100%;
- 
-    margin-top: -10%;
     background: url("../imagens/row1.svg") no-repeat center;
     background-size: cover;
     animation: moveBackground 2s linear infinite;
@@ -18,10 +16,25 @@ body{
       background-position: 100% 0;
     }
   }
+  
+  .menu-container {
+    display: inline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 13%;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Add a background color to make it stand out */
+    z-index: 1000; /* Sit on top */
+  }
 .menu-container .divisoria{
     width: 100%;
     height: 1px;
-    color: #000000a6;
 }
 
 .hero .imagem-hero{

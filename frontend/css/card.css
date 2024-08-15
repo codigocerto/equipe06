@@ -32,6 +32,8 @@ section {
 
 .title__content {
     display: flex;
+    position: absolute;
+    top: 175%;
     text-align: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -47,7 +49,8 @@ section {
 .title__content h2 {
     font-weight: var(--font-weight-bold);
     color: var(--color-black);
-    font-size: var(--font-size-lg);
+  font-size: 29px;
+  
 }
 
 .text__red {
@@ -61,15 +64,21 @@ section {
 
 .content__subtitle {
     margin: var(--spacing-md);
+  
 }
 
 .sub__title {
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-sm);
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 18px;
 }
 
 .main__title {
     margin-bottom: var(--spacing-md);
+
 }
 
 .container__img {
@@ -97,7 +106,7 @@ section {
 /* responsive */
 @media screen and (min-width: 320px) {
     .card__content {
-        margin: 20px;
+        margin: 20px;    
     }
 }
 
