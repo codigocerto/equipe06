@@ -4,6 +4,11 @@
 .logo-menu:hover {
   transform: scale(1.1);
 }
+.hero {
+  display: inline-block;
+  margin-top: 25%;
+  width: 100%;  
+}
 
 @media (max-width: 430px) {
   .menu-desktop {
