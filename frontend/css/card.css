@@ -21,15 +21,6 @@
     font-family: var(--main-font);
 }
 
-section {
-    width: var(--width);
-    min-height: 100vh;
-    height: auto;
-    font-size: var(--font-size-base);
-    background-color: var(--color-white);
-    margin-bottom: 20px;
-}
-
 .title__content {
     display: flex;
     position: absolute;
@@ -49,7 +40,7 @@ section {
 .title__content h2 {
     font-weight: var(--font-weight-bold);
     color: var(--color-black);
-  font-size: 29px;
+    font-size: 29px;  
   
 }
 
@@ -63,12 +54,14 @@ section {
 }
 
 .content__subtitle {
-    margin: var(--spacing-md);
-  
+    font-weight: var(--font-weight-medium);
+    color: var(--color-black);
+    font-size: var(--font-size-md);
+    text-align: center;
+    margin-top: 3%;
 }
 
 .sub__title {
-  
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -76,9 +69,12 @@ section {
     font-size: 18px;
 }
 
+#moveCard {
+    margin-top: -20%;
+}
 .main__title {
-    margin-bottom: var(--spacing-md);
-
+    /*margin-bottom: var(--spacing-md);*/
+    margin-top: -25%;
 }
 
 .container__img {
@@ -92,6 +88,10 @@ section {
     object-fit: cover;
 }
 
+.card__content{  
+    margin: 20px;
+}
+
 .card__container {
     display: flex;
     flex-direction: column;
@@ -102,13 +102,16 @@ section {
     max-width: 350px;
     margin: var(--spacing-md) auto;
 }
+.container__btn-register{
+    margin-bottom: 5%;
+}
 
 /* responsive */
-@media screen and (min-width: 320px) {
+/*@media screen and (min-width: 320px) {
     .card__content {
         margin: 20px;    
     }
-}
+}*/
 
 @media screen and (min-width: 1024px) {
     .card__content {
