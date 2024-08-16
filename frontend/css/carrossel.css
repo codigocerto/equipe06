@@ -17,12 +17,13 @@
 }
 
 .header {
-    margin-bottom: 140px;
+    margin-top: -10%;
 }
 
 .header h1 {
-    font-size: 2rem;
+    font-size: 26px;
     color: white;
+    margin-bottom: 5%;
 }
 
 .header h1 .red {
@@ -32,10 +33,11 @@
 .header h3 {
     font-size: .9rem;
     color: white;
+    margin-bottom: 10%;
 }
 
 .wrapper i {
-    top: 70%;
+    top: 65%;
     height: 50px;
     width: 50px;
     cursor: pointer;
