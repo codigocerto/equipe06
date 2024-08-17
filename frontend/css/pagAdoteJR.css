@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 29%;
     padding: 0 10px;
     gap: 20px;
 }
@@ -29,7 +30,7 @@ body {
 }
 
 .conteudo_titulo {
-    font-size: 32px;
+    font-size: 27px;
 }
 
 .destacado {
@@ -37,16 +38,24 @@ body {
 }
 
 .conteudo_paragrafo {
-    font-size: 18px;
+    color: black;
+    line-height: 27px;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: left;
 }
 
 .conteudo_imagem {
-    width: 166px;
+    width: 150px;
+}
+.conteudo_imagem:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .imagem {
-    width: 360px;
-    height: 360px;
+    width: 100%;
+    height: auto;
 }
 
 @media (min-width: 1024px) {
