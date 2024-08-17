@@ -2,6 +2,14 @@ body {
     height: 100vh;
     width: 100%;
 }
+.pai__container {
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin-top: 27%;
+    margin-left: 5%;
+    gap: 2em;
+}
 
 .main__title,
 .main__title--none {
@@ -40,7 +48,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: left;
-    max-width: 90%;
+    max-width: 100%;
     flex-direction: column;
     margin: 0 auto;
     gap: 20px;
@@ -50,9 +58,10 @@ body {
 .container__content p {
     color: black;
     line-height: 27px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1em;
     text-align: left;
+    
 }
 
 .align__center p {

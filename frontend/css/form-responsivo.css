@@ -54,9 +54,11 @@
 
   .form-input {
     margin: 10px 0 20px 0;
+    width: 100%;
   }
 
   .area-texto {
+    width: 100%;
     margin-top: 10px;
     padding: 10px 0 0 5px;
   }
