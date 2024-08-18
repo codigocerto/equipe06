@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -19,7 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script src="./../js/registrationForms.js" defer></script>
   </head>
+
+
   <body>
     <header class="menu-container">
       <img
@@ -27,7 +30,6 @@
         alt="logo CodigoCerto"
         class="logo-menu"
       />
-
       <nav class="menu-desktop">
         <ul>
           <li>
@@ -43,7 +45,7 @@
           <li><a href="beneficios">Benefícios</a></li>
         </ul>
       </nav>
-     </header>
+    </header>
 
     <section class="container-form">
       <div class="formulario">
@@ -56,18 +58,17 @@
         <h1 class="titulo-h1">Inscreva-<span>se</span></h1>
         <h2 class="titulo-h2">Preencha seus dados</h2>
 
-        <form class="formulario" method="post">
+        <form class="formulario" id="registrationForms" method="post">
           <div class="largura-form">
             <div class="input-grupo">
               <label class="form-label" for="nome">Nome:</label><br />
               <input
                 class="form-input"
                 type="text"
-                id="nome"
-                name="nome"
+                id="name"
+                name="name"
                 required
               /><br />
-
               <label class="form-label" for="email">Email:</label><br />
               <input
                 class="form-input"
@@ -82,12 +83,13 @@
               <input
                 class="form-input"
                 type="tel"
-                id="telefone"
+                id="phone"
                 name="telefone"
                 required
               /><br />
             </div>
           </div>
+
           <h4 class="titulo-h4">Habilidades:</h4>
           <div class="container-select">
             <div class="colunas">
@@ -95,59 +97,60 @@
                 <input
                   class="input-select"
                   type="checkbox"
-                  name="Front-End"
+                  name="habilidades"
+                  value="Front-End"
                   id="Front-End"
                 />
                 <label for="Front-End">Front-End</label>
               </div>
-
               <div>
                 <input
                   class="input-select"
                   type="checkbox"
-                  name="Back-End"
+                  name="habilidades"
+                  value="Back-End"
                   id="Back-End"
                 />
                 <label for="Back-End">Back-End</label>
               </div>
-
               <div>
                 <input
                   class="input-select"
                   type="checkbox"
-                  name="design"
+                  name="habilidades"
+                  value="Design"
                   id="design"
                 />
                 <label for="design">UI/UX DESIGN</label>
               </div>
             </div>
-
             <div class="colunas">
               <div>
                 <input
                   class="input-select"
                   type="checkbox"
-                  name="testes"
+                  name="habilidades"
+                  value="QA"
                   id="testes"
                 />
                 <label for="testes">Q/A</label>
               </div>
-
               <div>
                 <input
                   class="input-select"
                   type="checkbox"
-                  name="Banco de dados"
+                  name="habilidades"
+                  value="Banco de dados"
                   id="Banco de dados"
                 />
                 <label for="Banco de dados">Banco de dados</label>
               </div>
-
               <div>
                 <input
                   class="input-select"
                   type="checkbox"
-                  name="Outro"
+                  name="habilidades"
+                  value="Outro"
                   id="Outro"
                 />
                 <label class="form-label" for="Outro">Outro</label>
@@ -163,7 +166,6 @@
           />
           <label for="termos">I accept the terms </label>
           <br /><br />
-
           <div class="botao-container">
             <button class="botao" type="submit" value="Enviar">Enviar</button>
           </div>
@@ -177,7 +179,6 @@
           alt="profissionais de Ti"
           title="Profissionais de Ti"
         />
-
         <img
           class="img-logo"
           src="../imagens/logo-menu.png"
@@ -185,6 +186,5 @@
         />
       </div>
     </section>
-</body>
   </body>
 </html>
