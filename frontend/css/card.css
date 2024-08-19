@@ -115,19 +115,32 @@
 /* MOVENDO A PAGINA 2 E O CARD ABAIXO DEV - FABIO */
 @media screen and (min-width: 360px) {
     .title__content {
-        top: 138%;
+        top: 147%;
         width: 100%;
     }
     #moveCard {
-        margin-top: -40%;
+        margin-top: -50%;
+    }
+}
+@media screen and (min-width: 393px) {
+    .title__content {
+        top: 138%;
+    }
+    #moveCard {
+        margin-top: -60%;
     }
 }
 @media screen and (min-width: 412px){
     .title__content {
-        top: 130%;
+        top: 135%;
     }
     #moveCard {
-        margin-top: -50%;
+        margin-top: -60%;
+    }
+}
+@media screen and (min-width: 414px){
+    .title__content {
+        top: 139%;
     }
 }
 @media screen and (min-width: 1024px) {
