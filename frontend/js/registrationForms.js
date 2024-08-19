@@ -58,7 +58,7 @@ const registrationForms = () => {
          };
         console.log(formData);
 
-        const response = await fetch('http://localhost:3000/enrollment', {
+        const response = await fetch('https://codigo-certo-chi.vercel.app/enrollment', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
