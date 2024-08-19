@@ -27,6 +27,16 @@ function clearForm() {
   });
 }
 
+//FUNÇÃO PARA MOSTRAR O CARREGAMENTO
+//MOSTRA O LOADING
+const showLoading = () =>{
+    document.getElementById('loading-overlay').style.display = 'flex';
+}
+//ESCONDE O LOADING
+const hideLoading = () =>{
+  document.getElementById('loading-overlay').style.display = 'none';
+}
+
 const registrationForms = () => {
   const forms = document.getElementById('registrationForms');
 
@@ -58,6 +68,8 @@ const registrationForms = () => {
          };
         console.log(formData);
 
+        showLoading();
+        
         const response = await fetch('https://codigo-certo-chi.vercel.app/enrollment', {
           method: 'POST',
           headers: {
@@ -67,8 +79,12 @@ const registrationForms = () => {
         });
 
         if (response.ok) {
+
+          setTimeout(function() {
+            hideLoading();
+            clearForm();
+        }, 3000); // Simulando uma requisição de 3 segundos
           showToast("Formulário enviado com sucesso!" , 'sucess');
-          document.getElementById('registrationForms').reset()
         } else {
           throw new Error("Erro ao enviar formulário");
         }
