@@ -24,12 +24,12 @@ export class EnrollmentService {
             if(!dto.email || !dto.name || !dto.phone || !dto.hability ){
                 throw new Error(`Field name , email , phone or hability are empty`)
             }
+
             await this.sendEmailService.sendMail(
                 dto.email,
                 'Inscrição Bem-Sucedida',
                 template.textoInscricaoObrigado(dto.name, dto.hability)
-              );
-              
+            );
             await this.sendEmailService.sendMail(
                 process.env.EMAIL_COMUNITY,
                 'Nova Inscrição Bem-Sucedida',
