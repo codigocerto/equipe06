@@ -20,10 +20,19 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css" />
 
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <!-- LINK DO CSS DO OVERLAY -->
+     <link rel="stylesheet" href="../css/overlay.css">
+
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
     <script src="./../js/toastNotifications.js" defer></script>
     <script src="./../js/registrationForms.js" defer></script>
+
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+
   </head>
 
 
@@ -61,6 +70,16 @@
         />
         <h1 class="titulo-h1">Inscreva-<span>se</span></h1>
         <h2 class="titulo-h2">Preencha seus dados</h2>
+        
+        <!--  CARREGAMENTO -->
+        <div id="loading-overlay" style="display: none;">
+          <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        
+
+
 
         <form class="formulario" id="registrationForms" method="post">
           <div class="largura-form">
