@@ -112,3 +112,12 @@
         color: white;
 	}
 }
+
+	@media (min-width: 360px) {
+
+	#menu {
+		ul {
+			margin-top: 15%;
+		}
+	}
+}

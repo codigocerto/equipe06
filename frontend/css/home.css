@@ -111,5 +111,26 @@ body{
 
 .setas img{
     max-width: 50px;
-    
 }
+
+@media (min-width: 360px) {
+    /*alteração da altura do nav-bar fixed - dev Fábio*/
+    .menu-container {
+        height: 8.4%;
+      }
+    }
+@media (min-width: 375px) {
+    .menu-container {
+        height: 8.2%;
+      }
+@media (min-width: 393px) {
+    .menu-container {
+        height: 7.9%;
+      }
+    }
+ @media(min-width: 412px){
+    .menu-container {
+        height: 7.4%;
+      }
+    }
+ }   
