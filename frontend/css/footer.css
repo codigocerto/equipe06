@@ -1,4 +1,8 @@
-@media (max-width: 320px) {
+.logo-footer{
+  transition: 0.5s ease-in-out;
+}
+
+@media (min-width: 320px) {
   .icones {
     display: flex;
     align-items: center;
@@ -16,94 +20,57 @@
     flex-direction: row;
     gap: 10px;
     width: 100%;
-   margin-right: 5%;
   }
 
-  .texto h2 {
-    font-size: 13px;
+  .texto a {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .texto a:hover{
+    transform: scale(2.1);
   }
 
   .redes-sociais {
     display: flex;
     gap: 10px;
   }
-  .fa-brands:hover {
-    transform: scale(1.1);
-  }
-
-  #logo-footer {
-    position: absolute;
-    width: 100%;
-    margin-left: -13%;
-  }
-  #logo-footer:hover {
-    transform: scale(1.1);
-  }
-
-}
-@media (max-width: 769px) {
-  .icones {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    position: relative;
-  }
-  .texto {
-    display: flex;
-    align-content: space-between;
-    flex-direction: row;
-    gap: 20px;
-    font-size: 0.7em;
-  }
-
-  .divisoria {
-    width: 100%;
-    height: 2px;
-    background-color: #090909;
-  }
-  #logo-footer {
-    position: absolute;
-    width: 80px;
-    bottom: -65px;
-    padding-bottom: 10px;
-  }
+ 
 }
 
-@media (min-width: 1024px) {
-  .icones {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    position: relative;
-    margin-bottom: 20px;
-  }
-  .texto {
-    display: flex;
-    gap: 40px;
-    font-size: 0.7em;
-    font-weight: 600;
+@media (min-width: 768px) {
+
+
+  .texto{
+    gap: 30px;
+    font-size: 2.6em;
   }
 
-  .divisoria {
-    width: 100%;
-    height: 2px;
-    color: #000000;
+  .redes-sociais{
+    padding-top: 1em;
+    font-size: 1.3em;
+    gap: 20px;
   }
-  .redes-sociais {
-    display: flex;
-    gap: 13px;
-    position: absolute;
-    right: 40px;
-    top: 0;
+
+  .equipe-descricao{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.8em;
   }
-  #logo-footer {
-    position: absolute;
-    top: -10px;
-    left: 25px;
-  }
+ 
+}
+
+@media (min-width: 1200px) {
+
+.icones{
+  width: 100%;
+}
+
+
+.logo-footer:hover {
+  transform: scale(1.1);
+}
+  
+
+ 
 }
