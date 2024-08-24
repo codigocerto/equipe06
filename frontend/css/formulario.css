@@ -1,8 +1,7 @@
 @media (min-width: 320px) {
-  .secao-form{
-   padding: 20px;
-   max-width: 100%;
-   
+  .secao-form {
+    padding: 20px;
+    max-width: 100%;
   }
 
   .container-imagem {
@@ -10,7 +9,7 @@
     max-width: 100%;
   }
 
-  .container-imagem img{
+  .container-imagem img {
     width: 100%;
   }
 
@@ -18,10 +17,9 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    
   }
 
-  .formulario-titulos{
+  .formulario-titulos {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -29,33 +27,33 @@
     gap: 15px;
   }
 
-  .formulario-titulos .titulo-1{
+  .formulario-titulos .titulo-1 {
     padding-top: 10px;
     font-weight: 500;
     font-size: 1em;
   }
 
-  .formulario-titulos .subtitulo{
+  .formulario-titulos .subtitulo {
     font-weight: bold;
     font-size: 2.4em;
     text-align: center;
   }
 
-  .subtitulo span{
+  .subtitulo span {
     color: #eb5757;
   }
-  
+
   .container-formulario .form-input {
     width: 100%;
     margin-bottom: 15px;
     padding: 8px;
   }
 
-  .container-formulario .area-texto{
+  .container-formulario .area-texto {
     width: 100%;
   }
 
-  .checkbox{
+  .checkbox {
     margin: 12px 0;
   }
 
@@ -68,17 +66,15 @@
     margin-bottom: 16px;
     font-size: 1em;
   }
-
 }
 
-@media (min-width: 1024px){
-  
-  .secao-form{
+@media (min-width: 1024px) {
+  .secao-form {
     display: flex;
     padding: 0 50px;
   }
 
-  .formulario-titulos{
+  .formulario-titulos {
     display: inline-block;
   }
 
@@ -87,41 +83,40 @@
     max-width: 100%;
   }
 
-  .container-imagem img{
+  .container-imagem img {
     width: 90%;
   }
 
   .container-formulario {
     max-width: 450px;
-  
   }
 
   .container-formulario h2 {
     font-size: 2em;
     font-weight: 700;
     text-align: center;
-    width: 100%; 
+    width: 100%;
     padding-bottom: 24px;
-    text-align: left;  
+    text-align: left;
   }
 
   .titulo-h5 {
     font-size: 1em;
     font-weight: 400;
     padding-bottom: 25px;
-    
   }
 
-  .container-formulario .titulo-h5, .container-formulario .titulo-h4 {
-    text-align: left; 
-    width: 100%; 
+  .container-formulario .titulo-h5,
+  .container-formulario .titulo-h4 {
+    text-align: left;
+    width: 100%;
   }
 
   .span-mensagem {
     color: #eb5757;
   }
 
-  .formulario{
+  .formulario {
     width: 100%;
   }
 
@@ -134,7 +129,6 @@
     width: 100%;
     padding: 8px;
   }
-
 
   .form-input {
     margin: 10px 0 20px 0;
@@ -159,11 +153,9 @@
     cursor: pointer;
     margin-bottom: 16px;
     font-size: 0.75em;
-    
   }
 
   .botao:hover {
     background-color: #eb5757;
   }
- 
 }

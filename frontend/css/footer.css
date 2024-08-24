@@ -1,4 +1,4 @@
-.logo-footer{
+.logo-footer {
   transition: 0.5s ease-in-out;
 }
 
@@ -25,52 +25,51 @@
   .texto a {
     font-weight: bold;
     font-size: 16px;
+    transition: 0.5s ease-in;
   }
 
-  .texto a:hover{
-    transform: scale(2.1);
+  .texto a:hover {
+    transform: scale(1.11);
   }
 
   .redes-sociais {
     display: flex;
     gap: 10px;
   }
- 
+
+  .equipe-descricao {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.8em;
+    transition: 0.3s ease-in-out;
+  }
+
+  .equipe-descricao:hover{
+    color: #eb5757;
+  }
 }
 
 @media (min-width: 768px) {
-
-
-  .texto{
+  .texto {
     gap: 30px;
     font-size: 2.6em;
   }
 
-  .redes-sociais{
+  .redes-sociais {
     padding-top: 1em;
     font-size: 1.3em;
     gap: 20px;
   }
 
-  .equipe-descricao{
-    font-weight: bold;
-    font-style: italic;
-    font-size: 0.8em;
-  }
- 
+  
 }
 
 @media (min-width: 1200px) {
+  .icones {
+    width: 100%;
+  }
 
-.icones{
-  width: 100%;
-}
-
-
-.logo-footer:hover {
-  transform: scale(1.1);
-}
-  
-
- 
+  .logo-footer:hover {
+    transform: scale(1.1);
+  }
 }
