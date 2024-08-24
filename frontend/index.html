@@ -43,7 +43,6 @@
 <link rel="stylesheet" href="./css/carrossel.css" />
 <link rel="stylesheet" href="./css/roadmap.css" />
 <link rel="stylesheet" href="./css/formulario.css" />
-<link rel="stylesheet" href="./css/form-responsivo.css" />
 <link rel="stylesheet" href="./css/footer.css" />
 
 <!-- javascript -->
@@ -267,31 +266,46 @@
 
   <section class="secao-form">
     <div class="container-imagem">
-      <img src="./imagens/Group.png" alt="Devs" />
+      <img src="./imagens/fotoFinal.svg" alt="Devs" />
     </div>
   
     <div class="container-formulario">
-      <h4 class="titulo-h4">Deseja juntar-se a nós?</h4>
-      <h2>Envie uma <span class="span-mensagem">mensagem</span></h2>
-      <h5 class="titulo-h5">Estamos abertos a novas conexões</h5>
+
+      <div class="formulario-titulos">
+        <p class="titulo-1">Deseja juntar-se a nós?</p>
+        <p class="subtitulo">Envie uma <span>Mensagem</span></p> <br>
+
+        <p>Estamos abertos a novas conexões</p>
+      </div>
+
       <form class="formulario" id="contactForms" action="" method="post">
-        <label class="form-label" for="nome">Nome</label><br />
-        <input class="form-input" type="text" id="name" name="name" required /><br />
+        <ul>
+          <li class="form-label" for="nome">Nome
+            <input class="form-input" type="text" id="name" name="name" required />
+          </li>
 
-        <label class="form-label" for="email">Email</label><br />
-        <input class="form-input" type="email" id="email" name="email" required /><br />
-
-        <label class="form-label" for="mensagem">Mensagem</label><br />
-        <textarea class="area-texto" placeholder="Digite sua mensagem" id="message" name="content" rows="9" cols="44"
+          <li class="form-label" for="email">Email
+            <input class="form-input" type="email" id="email" name="email" required />
+          </li>
+          
+          <li class="form-label" for="mensagem">Mensagem
+            <textarea class="area-texto" placeholder="Digite sua mensagem" id="message" name="content" rows="10" cols="10"
           required></textarea>
-        <br /><br />
+          </li>
+        
+    
 
-        <input class="form-input" type="checkbox" id="termos" name="termos" value="concordo" />
-        <label class="form-label" class="condicoes" for="termos">Eu concordo com os termos e condições
-        </label>
-        <br /><br />
+        </ul>
+        
+        <div class="checkbox">
+          <input type="checkbox" id="termos" name="termos" value="concordo" />
+          <label class="form-label" class="condicoes" for="termos">Eu aceito os termos.
+        </div>
 
-        <button class="botao" type="submit" value="Enviar">Enviar</button>
+        <div class="botao-enviar-container">
+          <button class="botao" type="submit" value="Enviar">Enviar</button>
+        </div>
+
       </form>
     </div>
   </section>
@@ -302,14 +316,13 @@
   </div>
 
   <footer class="icones">
-    <a href="index.html"><img id="logo-footer" src="./imagens/logo-menu.png" alt="Logo" /><a/>
 
     <div class="texto">
-      <h2><a href="https://www.codigocertocoders.com.br/sobre" target="_blank">Valores</a></h2>
-      <h2><a href="https://www.codigocertocoders.com.br/vagas" target="_blank">Oportunidade</a></h2>
-      <h2><a href="#title">Benefícios</a></h2>
-      <h2><a href="trilhas-content">Trilhas</a></h2>
-      <h2><a href="#title">Voluntariado</a></h2>
+      <a href="https://www.codigocertocoders.com.br/sobre" target="_blank">Valores</a>
+      <a href="https://www.codigocertocoders.com.br/vagas" target="_blank">Oportunidade</a>
+      <a href="#title">Benefícios</a>
+      <a href="trilhas-content">Trilhas</a>
+      <a href="#title">Voluntariado</a>
     </div>
 
     <div class="redes-sociais">
@@ -326,7 +339,9 @@
 
     <hr class="divisoria" />
 
-   <a href="https://github.com/codigocerto/equipe06"><h6>Equipe de Desenvolvimento 06, 2024</h6></a>
+   <a href="https://github.com/codigocerto/equipe06" class="equipe-descricao"><span>Equipe de Desenvolvimento 06, 2024</span></a>
+
+   <a href="index.html"><img class="logo-footer" src="./imagens/logo-menu.png" alt="Logo" /></a>
   </footer>
   </body>
 </html>

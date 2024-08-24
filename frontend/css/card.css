@@ -23,8 +23,6 @@
 
 .title__content {
     display: flex;
-    position: absolute;
-    top: 175%;
     text-align: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -68,13 +66,10 @@
     font-size: 16px;
 }
 
-#moveCard {
-    margin-top: -30%;
-}
-.main__title {
-    /*margin-bottom: var(--spacing-md);*/
-    margin-top: -25%;
-}
+/* #moveCard {
+    margin-top: -20%;
+} */
+
 
 .container__img {
     display: flex;
@@ -106,43 +101,12 @@
 }
 
 /* responsive */
-/*@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
     .card__content {
         margin: 20px;    
     }
-}*/
+}
 
-/* MOVENDO A PAGINA 2 E O CARD ABAIXO DEV - FABIO */
-@media screen and (min-width: 360px) {
-    .title__content {
-        top: 147%;
-        width: 100%;
-    }
-    #moveCard {
-        margin-top: -50%;
-    }
-}
-@media screen and (min-width: 393px) {
-    .title__content {
-        top: 138%;
-    }
-    #moveCard {
-        margin-top: -60%;
-    }
-}
-@media screen and (min-width: 412px){
-    .title__content {
-        top: 135%;
-    }
-    #moveCard {
-        margin-top: -60%;
-    }
-}
-@media screen and (min-width: 414px){
-    .title__content {
-        top: 139%;
-    }
-}
 @media screen and (min-width: 1024px) {
     .card__content {
         display: flex;
