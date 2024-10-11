@@ -122,6 +122,28 @@
     height: 100%;
     object-fit: cover;
 }
+@media screen and (min-width: 768px){
+    .header {
+        margin-top: -10%;
+    }
+    .header h1 {
+        font-size: 32px;
+    }
+    
+    .header h3 {
+        font-size: 1.3rem;
+    }
+    .wrapper i#left {
+        margin-top: -4%;
+    }
+    .wrapper i#right {
+        margin-top: -5%;
+    }
+    .carrossel-container {
+        height: 80vh;
+    }
+    
+}
 
 @media screen and (max-width: 900px) {
     .wrapper .carousel {

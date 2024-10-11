@@ -39,7 +39,6 @@
     font-weight: var(--font-weight-bold);
     color: var(--color-black);
     font-size: 25px;  
-  
 }
 
 .text__red {
@@ -105,7 +104,65 @@
     .card__content {
         margin: 20px;    
     }
+    
+    #movetest{
+       margin-top: -99%;
+     
+    }
 }
+
+@media screen and (min-width: 360px) {
+    #movetest{
+        margin-top: -120%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #movetest{
+        margin-top: -74%;
+    }
+    .title__content h2 {
+        font-size: 35px;  
+    }
+    .sub__title{
+        font-size: 25px;
+    }
+    .card__content {
+        display: flex; /* Adicione esta linha */
+        flex-wrap: wrap; /* Adicione esta linha */
+        justify-content: space-between; /* Adicione esta linha para espaçamento */
+        max-width: 90%; /* Certifique-se de que os cartões não excedam a largura */
+        margin: 0 auto; /* Centraliza o conteúdo */
+    }
+    
+    .card__container {
+        flex: 1 1 calc(33.33% - 20px); /* Alinha três cartões lado a lado */
+        margin: 10px; /* Margem para espaçamento entre os cartões */
+    }
+  
+}
+@media screen and (min-width: 800px){
+    #movetest{
+        margin-top: -93%;
+    }
+}
+@media screen and (min-width: 820px) {
+    #movetest{
+        margin-top: -80%;
+     }
+    .card__content {
+        max-width: 85%; /* Certifique-se de que os cartões não excedam a largura */ 
+    }
+}
+@media screen and (min-width: 884px){
+    .card__content {
+        max-width: 81%; /* Certifique-se de que os cartões não excedam a largura */ 
+    }
+    #movetest{
+        margin-top: -73%;
+    }
+}
+
 
 @media screen and (min-width: 1024px) {
     .card__content {

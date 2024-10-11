@@ -425,7 +425,7 @@ body {
   }
 }
 
-@media (min-width: 429px) and (max-width: 768px) {
+@media (min-width: 429px) and (max-width: 767px) {
   #burger-menu {
     display: none;
   }
@@ -608,7 +608,7 @@ body {
   }
 }
 
-@media (min-width: 769px) {
+@media screen and (min-width: 768px) {
   #burger-menu {
     display: none;
   }

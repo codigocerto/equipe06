@@ -114,11 +114,36 @@ body {
   transform: scale(1.1);
 }
 
-.setas {
+/*.setas {
   position: absolute;
   right: 0;
 }
 
 .setas img {
   max-width: 50px;
+}*/
+
+.botao-tablet{
+display: flex;
+justify-content: end;
+}
+.botao-tablet > button {
+  padding: 15px 32px;
+  margin: 4px 2px;
+  background-color: #000000;
+  border: none;
+  display: inline-block;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao-tablet > button:hover {
+  background-color: #eb5757;
+  transform: scale(1.1);
 }
