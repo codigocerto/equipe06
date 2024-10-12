@@ -51,16 +51,21 @@
 
 @media (min-width: 768px) {
   .texto {
-    gap: 30px;
-    font-size: 2.6em;
+    font-size: 1.3em;
+    gap: 50px;
+  }
+  .texto a {
+    font-size: 20px;
   }
 
   .redes-sociais {
     padding-top: 1em;
-    font-size: 1.3em;
+    font-size: 1.8em;
     gap: 20px;
   }
-
+ .equipe-descricao {
+  font-size: 1.2em;
+ }
   
 }
 

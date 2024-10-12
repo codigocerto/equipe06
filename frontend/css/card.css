@@ -139,7 +139,7 @@
         flex: 1 1 calc(33.33% - 20px); /* Alinha três cartões lado a lado */
         margin: 10px; /* Margem para espaçamento entre os cartões */
     }
-  
+
 }
 @media screen and (min-width: 800px){
     #movetest{

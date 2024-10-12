@@ -67,7 +67,31 @@
     font-size: 1em;
   }
 }
+@media (min-width: 768px){
 
+  .container-imagem img {
+    margin-left: 12%;
+    width: 80%;
+  }
+  .formulario-titulos{
+    font-size: 25px;
+  }
+  .formulario {
+    font-size: 22px;
+     width: 85%;
+     margin-left: 7%;
+  }
+  .area-texto {
+    font-size: 20px;
+  }
+}
+@media (min-width: 800px){
+  .formulario {
+     width: 80%;
+     margin-left: 10%;
+  }
+
+}
 @media (min-width: 1024px) {
   .secao-form {
     display: flex;
