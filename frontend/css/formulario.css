@@ -112,7 +112,8 @@
   }
 
   .container-formulario {
-    max-width: 450px;
+    max-width: 100%;
+    margin-left: 5%;
   }
 
   .container-formulario h2 {

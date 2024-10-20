@@ -121,3 +121,10 @@
 		}
 	}
 }
+
+@media (min-width: 1024px) {
+	.menu-container{
+		position: initial;
+	}
+
+}

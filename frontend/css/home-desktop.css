@@ -122,13 +122,14 @@
     right: 50px;
     bottom: 0px;
   }
-}
-#rows {
+
+  #rows {
   animation: moveBackground 5s linear infinite;
   height: 100vh;
-}
-.title__content{
+  }
+  .title__content{
   margin-top: 0%;
+  }
 }
 
 /* Para dispositivos de 431px até de 764px resolução */
@@ -136,9 +137,10 @@
   .menu-desktop {
     display: none;
   }
+}
 
   /* Para dispositivos de até 800px de resolução*/
-  @media (min-width: 800px) {
+@media (min-width: 800px) {
     .hero {
       padding-top: 100px;
     }
@@ -146,15 +148,26 @@
     .informacoes .botao-cadastrar {
       margin-top: 20px;
     }
-  }
+}
 
   /* Para dispositivos de até 1024px de resolução */
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
+
+    #burger-menu {
+      display: none;
+    }
+    
+    .logo-menu{
+      margin-bottom: 1%;
+      margin-left: 45%;
+      width: 9%;
+    }
     .hero {
       padding: 10px 0;
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
+      margin-top: 7%;
     }
 
     .hero .informacoes {
@@ -185,5 +198,9 @@
     .informacoes .setas {
       bottom: 0px;
     }
+    .container__btn-register {
+      margin-right: 100%;
+      width: 30%;
+    }
   }
-}
+
